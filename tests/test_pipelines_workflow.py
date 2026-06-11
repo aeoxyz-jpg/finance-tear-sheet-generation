@@ -58,3 +58,29 @@ def test_unrepairable_stops_at_max_rounds(monkeypatch):
     assert r.repair_rounds == 3
     assert "outlook" in r.unresolved_defects
     assert r.score["composite"] < 100.0       # validation failed -> structural points lost
+
+
+import pathlib
+from pipelines import run as prun
+
+
+def test_write_report_and_persist(tmp_path):
+    cell = {
+        "pipeline": "workflow", "worker_model": "w", "company": "SYN",
+        "score": {"composite": 97.5, "number_accuracy": 30.0, "grounding": 22.5,
+                  "coverage": 30.0, "structural": 15.0, "detail": {}},
+        "telemetry": [{"input_tokens": 100, "output_tokens": 50}],
+        "html": "<html>x</html>", "repair_rounds": 1, "turns": 0,
+    }
+    prun.persist(cell, tmp_path)
+    assert (tmp_path / "workflow" / "SYN.json").exists()
+    assert (tmp_path / "workflow" / "SYN.html").read_text() == "<html>x</html>"
+    prun.write_report({"workflow": [cell]}, tmp_path)
+    report = (tmp_path / "report.md").read_text()
+    assert "mean composite 97.5" in report
+    assert "dev-set" in report                 # the overfit caveat is stated
+    assert "judge bias" in report.lower()
+
+
+def test_all_tickers_returns_12():
+    assert len(prun.all_tickers()) == 12
