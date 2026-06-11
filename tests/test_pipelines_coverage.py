@@ -67,3 +67,48 @@ def test_score_coverage_missed_text_category():
     out = coverage.score_coverage(p, judge_covered)
     assert out["earned"] == 26 and out["available"] == 30
     assert out["points"] == 26.0
+
+
+import json
+from common.models_config import ModelConfig
+from tests._pipeline_stubs import text_response
+
+
+def test_judge_text_coverage_parses_booleans():
+    p = make_payload()
+    data = {c: {"covered": c != "outlook_narrative", "why": "w"}
+            for c in coverage.TEXT_CATEGORIES}
+
+    def fake_complete(model, **kw):
+        assert kw["output_schema"] is coverage.COVERAGE_JUDGE_SCHEMA
+        return text_response(json.dumps(data), stage=kw.get("stage", ""))
+
+    out = coverage.judge_text_coverage(
+        "prose", p, ModelConfig(provider="anthropic", model_id="m"),
+        complete_fn=fake_complete)
+    assert out["covered"]["trend_narrative"] is True
+    assert out["covered"]["outlook_narrative"] is False
+
+
+from pipelines import checks, _evaluate
+from tests._pipeline_stubs import COMPLIANT_SLOTS, stub_judge, stub_coverage_judge
+
+
+def test_section_defects_compliant_and_leaky():
+    p = make_payload()
+    for slot, text in COMPLIANT_SLOTS.items():
+        assert checks.section_defects(slot, text, p) == []
+    d = checks.section_defects(
+        "valuation_commentary",
+        "Trades at 20.4x EV/EBITDA, a premium to peers using {{made_up}}.", p)
+    assert any("leaked" in x for x in d)
+    assert any("hallucinated" in x for x in d)
+
+
+def test_evaluate_perfect_cell_scores_100():
+    p = make_payload()
+    out = _evaluate.evaluate(p, dict(COMPLIANT_SLOTS),
+                             ModelConfig(provider="anthropic", model_id="m"),
+                             judge_fn=stub_judge, coverage_judge_fn=stub_coverage_judge)
+    assert out["score"]["composite"] == 100.0
+    assert out["html"] and "20.4x" in out["prose_substituted"]

@@ -2,8 +2,12 @@
 proxy checks (drive revision, never part of the final score), table coverage.
 The judge text supplement (Task 6) fills TEXT_CATEGORIES at final evaluation."""
 from __future__ import annotations
+import json
+import pathlib
 import re
 from common.schemas import Payload
+from common.models_config import ModelConfig
+from common import llm
 
 TABLE_CATEGORIES = {"financial_table": 4, "multiples_table": 4,
                     "comps_table": 4, "transactions_table": 4}
@@ -144,3 +148,33 @@ def score_coverage(payload: Payload, judge_covered: dict[str, bool]) -> dict:
     points = COVERAGE_TOTAL * earned / available_pts if available_pts else float(COVERAGE_TOTAL)
     return {"points": round(points, 2), "earned": earned,
             "available": available_pts, "detail": detail}
+
+
+_PROMPTS = pathlib.Path(__file__).resolve().parent / "prompts"
+
+COVERAGE_JUDGE_SCHEMA = {
+    "type": "object",
+    "properties": {cat: {
+        "type": "object",
+        "properties": {"covered": {"type": "boolean"}, "why": {"type": "string"}},
+        "required": ["covered", "why"], "additionalProperties": False}
+        for cat in TEXT_CATEGORIES},
+    "required": list(TEXT_CATEGORIES), "additionalProperties": False,
+}
+
+
+def judge_text_coverage(prose: str, payload: Payload, judge_model: ModelConfig, *,
+                        cache=None, complete_fn=llm.complete) -> dict:
+    system = (_PROMPTS / "coverage_judge_system.md").read_text()
+    user = ("PAYLOAD:\n"
+            + json.dumps(payload.model_dump(), ensure_ascii=False, default=str)
+            + "\n\nTEAR SHEET PROSE:\n" + prose)
+    out = complete_fn(judge_model, system=system,
+                      messages=[{"role": "user", "content": user}],
+                      output_schema=COVERAGE_JUDGE_SCHEMA, cache=cache,
+                      stage="coverage_judge")
+    text = next(b["text"] for b in out["content"] if b["type"] == "text")
+    data = json.loads(llm.extract_json(text))
+    covered = {cat: bool(data.get(cat, {}).get("covered")) for cat in TEXT_CATEGORIES}
+    return {"covered": covered, "raw": data,
+            "telemetry": out.get("telemetry", {}), "call": out.get("call", {})}
