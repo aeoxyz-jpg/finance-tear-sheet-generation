@@ -1,0 +1,36 @@
+{
+  "ticker": "ACME",
+  "name": "Acme Technologies Inc.",
+  "as_of": "2025-12-31",
+  "source_link": "https://fixtures.local/acme",
+  "financials": {
+    "revenue":    {"FY-3": 28000.0, "FY-2": 32000.0, "FY-1": 37000.0, "FY": 41000.0, "LTM": 42300.0},
+    "ebitda":     {"FY-3": 9000.0,  "FY-2": 10500.0, "FY-1": 12500.0, "FY": 14000.0, "LTM": 14500.0},
+    "ebit":       {"FY-3": 7000.0,  "FY-2": 8200.0,  "FY-1": 9900.0,  "FY": 11200.0, "LTM": 11600.0},
+    "net_income": {"FY-3": 5000.0,  "FY-2": 6000.0,  "FY-1": 7400.0,  "FY": 8500.0,  "LTM": 8800.0},
+    "total_debt": {"FY-3": 6000.0,  "FY-2": 6000.0,  "FY-1": 5500.0,  "FY": 5000.0,  "LTM": 5000.0},
+    "cash":       {"FY-3": 8000.0,  "FY-2": 9000.0,  "FY-1": 11000.0, "FY": 13000.0, "LTM": 13500.0},
+    "fcf":        {"FY-3": 4200.0,  "FY-2": 5100.0,  "FY-1": 6300.0,  "FY": 7200.0,  "LTM": 7500.0}
+  },
+  "market_data": {
+    "market_cap": 250000.0,
+    "enterprise_value": 241500.0,
+    "share_price": 312.5,
+    "shares_outstanding": 800.0,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": 16.7, "ev_revenue": 5.7, "pe": 28.4, "pb": 9.1},
+  "comparable_companies": [
+    {"name": "Globex Corp", "ticker": "GBX", "ev_ebitda": 15.2, "market_cap": 180000.0},
+    {"name": "Initech",     "ticker": "INTC2", "ev_ebitda": 18.1, "market_cap": 320000.0},
+    {"name": "Umbrella Soft","ticker": "UMBS", "ev_ebitda": 14.0, "market_cap": 95000.0}
+  ],
+  "transactions": [
+    {"date": "2024-06-01", "target": "DataCo", "acquirer": "ACME", "value": 3200.0}
+  ],
+  "key_developments": [
+    {"date": "2025-10-15", "headline": "Acme reports record Q3 revenue", "category": "earnings"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": 46000.0, "ebitda_next_fy": 16000.0, "eps_next_fy": 11.8},
+  "earnings_sentiment": {"score": 0.42, "summary": "Constructive; cloud momentum noted."}
+}

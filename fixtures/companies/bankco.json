@@ -1,0 +1,37 @@
+{
+  "ticker": "BANK",
+  "name": "BankCo Financial Group",
+  "as_of": "2025-12-31",
+  "source_link": "https://fixtures.local/bankco",
+  "financials": {
+    "revenue":    {"FY-3": 8200.0,  "FY-2": 9100.0,  "FY-1": 9800.0,  "FY": 10500.0, "LTM": 10900.0},
+    "ebitda":     {"FY-3": null,    "FY-2": null,    "FY-1": null,    "FY": null,    "LTM": null},
+    "ebit":       {"FY-3": null,    "FY-2": null,    "FY-1": null,    "FY": null,    "LTM": null},
+    "net_income": {"FY-3": 1800.0,  "FY-2": 2100.0,  "FY-1": 2350.0,  "FY": 2600.0,  "LTM": 2700.0},
+    "total_debt": {"FY-3": 65000.0, "FY-2": 68000.0, "FY-1": 70000.0, "FY": 72000.0, "LTM": 73000.0},
+    "cash":       {"FY-3": 12000.0, "FY-2": 14000.0, "FY-1": 15500.0, "FY": 17000.0, "LTM": 18000.0},
+    "fcf":        {"FY-3": 1600.0,  "FY-2": 1900.0,  "FY-1": 2100.0,  "FY": 2350.0,  "LTM": 2450.0}
+  },
+  "market_data": {
+    "market_cap": 45000.0,
+    "enterprise_value": null,
+    "share_price": 45.0,
+    "shares_outstanding": 1000.0,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": null, "ev_revenue": null, "pe": 16.7, "pb": 1.4},
+  "comparable_companies": [
+    {"name": "RegionalBank Alpha",  "ticker": "RBAL", "ev_ebitda": null, "market_cap": 38000.0},
+    {"name": "CommercialBank Beta", "ticker": "CBBE", "ev_ebitda": null, "market_cap": 52000.0},
+    {"name": "TrustCo Gamma",       "ticker": "TCBG", "ev_ebitda": null, "market_cap": 41000.0}
+  ],
+  "transactions": [
+    {"date": "2024-09-01", "target": "SmallBank Ltd", "acquirer": "BANK", "value": 1800.0}
+  ],
+  "key_developments": [
+    {"date": "2025-10-20", "headline": "BankCo reports Q3 net interest margin expansion of 12bps", "category": "earnings"},
+    {"date": "2025-05-14", "headline": "BankCo raises quarterly dividend by 8%", "category": "dividend"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": 11400.0, "ebitda_next_fy": null, "eps_next_fy": 2.85},
+  "earnings_sentiment": {"score": 0.28, "summary": "Cautiously positive; NIM tailwinds offset by credit cost concerns."}
+}

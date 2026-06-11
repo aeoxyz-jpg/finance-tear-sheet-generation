@@ -1,0 +1,533 @@
+{
+  "fixture_set_version": "1",
+  "workers": [
+    {
+      "provider": "ollama",
+      "model_id": "glm-5.1:cloud",
+      "tool_use": true,
+      "structured_output": true,
+      "think": false
+    }
+  ],
+  "judge": {
+    "provider": "anthropic",
+    "model_id": "claude-sonnet-4-6"
+  },
+  "prompt_hashes": {
+    "agentic_grounded_system.md": "e8f03d70386b3ea4e6dbafe5a6d45ca4f38025d8f67a15682e730a49bf8936a0",
+    "agentic_system.md": "d184d33c5335165baaedcd3874347c1879ee4b1472e3a5ff25fa119e5f7aaaa6",
+    "agentic_verified_fix.md": "cd63d448b89eaa1959c7597ea25afef7f43356c20d76fea2967cd69647713759",
+    "critic_system.md": "fe4f062899cb3276d6d000def2d7597b95e547d4e962d260ce328598cedfb6d9",
+    "judge_system.md": "cebf2f2180befebf039e1bb438746cdfb9aa2e78f328a9e12d0a5b4863682bc8",
+    "narrative_system.md": "7981eb4e4caeef2a99ce037b97e4f0ec7a7df9f4b9f19583c51d464a1be3e2c1",
+    "plan_system.md": "b6061cd87106ec88e4e7db3576cbdb5329c494e8dc93181571a62e27379cf956",
+    "reviser_system.md": "c8c872e95f5e7e28bfe40d9c719003bba5b3ca4a1a4a79c6c27101fbe6b4e915",
+    "single_shot_system.md": "73d0049190660be0ad12e18d2d6348dc7e16a5f5d4092e769800634bfbf9249f"
+  },
+  "cells": [
+    {
+      "design": "single_shot",
+      "worker_model": "glm-5.1:cloud",
+      "company": "ACME",
+      "cache_hits": 2,
+      "cache_misses": 0
+    },
+    {
+      "design": "single_shot",
+      "worker_model": "glm-5.1:cloud",
+      "company": "MEGA",
+      "cache_hits": 2,
+      "cache_misses": 0
+    },
+    {
+      "design": "single_shot",
+      "worker_model": "glm-5.1:cloud",
+      "company": "THIN",
+      "cache_hits": 2,
+      "cache_misses": 0
+    },
+    {
+      "design": "single_shot",
+      "worker_model": "glm-5.1:cloud",
+      "company": "LOSS",
+      "cache_hits": 2,
+      "cache_misses": 0
+    },
+    {
+      "design": "single_shot",
+      "worker_model": "glm-5.1:cloud",
+      "company": "PRIV",
+      "cache_hits": 2,
+      "cache_misses": 0
+    },
+    {
+      "design": "single_shot",
+      "worker_model": "glm-5.1:cloud",
+      "company": "BANK",
+      "cache_hits": 2,
+      "cache_misses": 0
+    },
+    {
+      "design": "single_shot",
+      "worker_model": "glm-5.1:cloud",
+      "company": "NOTX",
+      "cache_hits": 2,
+      "cache_misses": 0
+    },
+    {
+      "design": "single_shot",
+      "worker_model": "glm-5.1:cloud",
+      "company": "MERG",
+      "cache_hits": 2,
+      "cache_misses": 0
+    },
+    {
+      "design": "single_shot",
+      "worker_model": "glm-5.1:cloud",
+      "company": "ADRC",
+      "cache_hits": 2,
+      "cache_misses": 0
+    },
+    {
+      "design": "single_shot",
+      "worker_model": "glm-5.1:cloud",
+      "company": "CONG",
+      "cache_hits": 2,
+      "cache_misses": 0
+    },
+    {
+      "design": "single_shot",
+      "worker_model": "glm-5.1:cloud",
+      "company": "HYPR",
+      "cache_hits": 2,
+      "cache_misses": 0
+    },
+    {
+      "design": "single_shot",
+      "worker_model": "glm-5.1:cloud",
+      "company": "AMBG",
+      "cache_hits": 2,
+      "cache_misses": 0
+    },
+    {
+      "design": "prompt_chaining",
+      "worker_model": "glm-5.1:cloud",
+      "company": "ACME",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "prompt_chaining",
+      "worker_model": "glm-5.1:cloud",
+      "company": "MEGA",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "prompt_chaining",
+      "worker_model": "glm-5.1:cloud",
+      "company": "THIN",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "prompt_chaining",
+      "worker_model": "glm-5.1:cloud",
+      "company": "LOSS",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "prompt_chaining",
+      "worker_model": "glm-5.1:cloud",
+      "company": "PRIV",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "prompt_chaining",
+      "worker_model": "glm-5.1:cloud",
+      "company": "BANK",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "prompt_chaining",
+      "worker_model": "glm-5.1:cloud",
+      "company": "NOTX",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "prompt_chaining",
+      "worker_model": "glm-5.1:cloud",
+      "company": "MERG",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "prompt_chaining",
+      "worker_model": "glm-5.1:cloud",
+      "company": "ADRC",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "prompt_chaining",
+      "worker_model": "glm-5.1:cloud",
+      "company": "CONG",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "prompt_chaining",
+      "worker_model": "glm-5.1:cloud",
+      "company": "HYPR",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "prompt_chaining",
+      "worker_model": "glm-5.1:cloud",
+      "company": "AMBG",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "reflection",
+      "worker_model": "glm-5.1:cloud",
+      "company": "ACME",
+      "cache_hits": 9,
+      "cache_misses": 0
+    },
+    {
+      "design": "reflection",
+      "worker_model": "glm-5.1:cloud",
+      "company": "MEGA",
+      "cache_hits": 9,
+      "cache_misses": 0
+    },
+    {
+      "design": "reflection",
+      "worker_model": "glm-5.1:cloud",
+      "company": "THIN",
+      "cache_hits": 7,
+      "cache_misses": 0
+    },
+    {
+      "design": "reflection",
+      "worker_model": "glm-5.1:cloud",
+      "company": "LOSS",
+      "cache_hits": 9,
+      "cache_misses": 0
+    },
+    {
+      "design": "reflection",
+      "worker_model": "glm-5.1:cloud",
+      "company": "PRIV",
+      "cache_hits": 9,
+      "cache_misses": 0
+    },
+    {
+      "design": "reflection",
+      "worker_model": "glm-5.1:cloud",
+      "company": "BANK",
+      "cache_hits": 7,
+      "cache_misses": 0
+    },
+    {
+      "design": "reflection",
+      "worker_model": "glm-5.1:cloud",
+      "company": "NOTX",
+      "cache_hits": 9,
+      "cache_misses": 0
+    },
+    {
+      "design": "reflection",
+      "worker_model": "glm-5.1:cloud",
+      "company": "MERG",
+      "cache_hits": 9,
+      "cache_misses": 0
+    },
+    {
+      "design": "reflection",
+      "worker_model": "glm-5.1:cloud",
+      "company": "ADRC",
+      "cache_hits": 9,
+      "cache_misses": 0
+    },
+    {
+      "design": "reflection",
+      "worker_model": "glm-5.1:cloud",
+      "company": "CONG",
+      "cache_hits": 9,
+      "cache_misses": 0
+    },
+    {
+      "design": "reflection",
+      "worker_model": "glm-5.1:cloud",
+      "company": "HYPR",
+      "cache_hits": 9,
+      "cache_misses": 0
+    },
+    {
+      "design": "reflection",
+      "worker_model": "glm-5.1:cloud",
+      "company": "AMBG",
+      "cache_hits": 9,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic",
+      "worker_model": "glm-5.1:cloud",
+      "company": "ACME",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic",
+      "worker_model": "glm-5.1:cloud",
+      "company": "MEGA",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic",
+      "worker_model": "glm-5.1:cloud",
+      "company": "THIN",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic",
+      "worker_model": "glm-5.1:cloud",
+      "company": "LOSS",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic",
+      "worker_model": "glm-5.1:cloud",
+      "company": "PRIV",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic",
+      "worker_model": "glm-5.1:cloud",
+      "company": "BANK",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic",
+      "worker_model": "glm-5.1:cloud",
+      "company": "NOTX",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic",
+      "worker_model": "glm-5.1:cloud",
+      "company": "MERG",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic",
+      "worker_model": "glm-5.1:cloud",
+      "company": "ADRC",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic",
+      "worker_model": "glm-5.1:cloud",
+      "company": "CONG",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic",
+      "worker_model": "glm-5.1:cloud",
+      "company": "HYPR",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic",
+      "worker_model": "glm-5.1:cloud",
+      "company": "AMBG",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_grounded",
+      "worker_model": "glm-5.1:cloud",
+      "company": "ACME",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_grounded",
+      "worker_model": "glm-5.1:cloud",
+      "company": "MEGA",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_grounded",
+      "worker_model": "glm-5.1:cloud",
+      "company": "THIN",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_grounded",
+      "worker_model": "glm-5.1:cloud",
+      "company": "LOSS",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_grounded",
+      "worker_model": "glm-5.1:cloud",
+      "company": "PRIV",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_grounded",
+      "worker_model": "glm-5.1:cloud",
+      "company": "BANK",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_grounded",
+      "worker_model": "glm-5.1:cloud",
+      "company": "NOTX",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_grounded",
+      "worker_model": "glm-5.1:cloud",
+      "company": "MERG",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_grounded",
+      "worker_model": "glm-5.1:cloud",
+      "company": "ADRC",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_grounded",
+      "worker_model": "glm-5.1:cloud",
+      "company": "CONG",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_grounded",
+      "worker_model": "glm-5.1:cloud",
+      "company": "HYPR",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_grounded",
+      "worker_model": "glm-5.1:cloud",
+      "company": "AMBG",
+      "cache_hits": 3,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_verified",
+      "worker_model": "glm-5.1:cloud",
+      "company": "ACME",
+      "cache_hits": 5,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_verified",
+      "worker_model": "glm-5.1:cloud",
+      "company": "MEGA",
+      "cache_hits": 5,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_verified",
+      "worker_model": "glm-5.1:cloud",
+      "company": "THIN",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_verified",
+      "worker_model": "glm-5.1:cloud",
+      "company": "LOSS",
+      "cache_hits": 5,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_verified",
+      "worker_model": "glm-5.1:cloud",
+      "company": "PRIV",
+      "cache_hits": 4,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_verified",
+      "worker_model": "glm-5.1:cloud",
+      "company": "BANK",
+      "cache_hits": 5,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_verified",
+      "worker_model": "glm-5.1:cloud",
+      "company": "NOTX",
+      "cache_hits": 5,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_verified",
+      "worker_model": "glm-5.1:cloud",
+      "company": "MERG",
+      "cache_hits": 5,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_verified",
+      "worker_model": "glm-5.1:cloud",
+      "company": "ADRC",
+      "cache_hits": 5,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_verified",
+      "worker_model": "glm-5.1:cloud",
+      "company": "CONG",
+      "cache_hits": 5,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_verified",
+      "worker_model": "glm-5.1:cloud",
+      "company": "HYPR",
+      "cache_hits": 5,
+      "cache_misses": 0
+    },
+    {
+      "design": "agentic_verified",
+      "worker_model": "glm-5.1:cloud",
+      "company": "AMBG",
+      "cache_hits": 4,
+      "cache_misses": 0
+    }
+  ]
+}

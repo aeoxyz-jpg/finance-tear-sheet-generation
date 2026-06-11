@@ -1,0 +1,17 @@
+{
+  "fixture_set_version": "1",
+  "companies": [
+    {"ticker": "ACME", "file": "acme.json",        "edge_case": "baseline happy path"},
+    {"ticker": "MEGA", "file": "megacorp.json",    "edge_case": "large comp set"},
+    {"ticker": "THIN", "file": "thincap.json",     "edge_case": "thin data"},
+    {"ticker": "LOSS", "file": "lossco.json",      "edge_case": "negative EBITDA / metric adaptation"},
+    {"ticker": "PRIV", "file": "privco.json",      "edge_case": "private, many gaps"},
+    {"ticker": "BANK", "file": "bankco.json",      "edge_case": "financial sector, different metrics"},
+    {"ticker": "NOTX", "file": "notxn.json",       "edge_case": "no recent transactions"},
+    {"ticker": "MERG", "file": "mergeco.json",     "edge_case": "transaction-heavy"},
+    {"ticker": "ADRC", "file": "adrco.json",       "edge_case": "foreign / ADR / currency"},
+    {"ticker": "CONG", "file": "conglom.json",     "edge_case": "conglomerate / ambiguous comps"},
+    {"ticker": "HYPR", "file": "hypergrowth.json", "edge_case": "volatile metrics / directionality risk"},
+    {"ticker": "AMBG", "file": "ambig.json",       "edge_case": "ambiguous name / entity resolution"}
+  ]
+}

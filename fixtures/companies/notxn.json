@@ -1,0 +1,35 @@
+{
+  "ticker": "NOTX",
+  "name": "NoTransaction Software Corp.",
+  "as_of": "2025-12-31",
+  "source_link": "https://fixtures.local/notxn",
+  "financials": {
+    "revenue":    {"FY-3": 5200.0,  "FY-2": 6100.0,  "FY-1": 7000.0,  "FY": 7900.0,  "LTM": 8200.0},
+    "ebitda":     {"FY-3": 1300.0,  "FY-2": 1600.0,  "FY-1": 1900.0,  "FY": 2200.0,  "LTM": 2300.0},
+    "ebit":       {"FY-3": 1000.0,  "FY-2": 1250.0,  "FY-1": 1500.0,  "FY": 1750.0,  "LTM": 1820.0},
+    "net_income": {"FY-3": 720.0,   "FY-2": 910.0,   "FY-1": 1100.0,  "FY": 1300.0,  "LTM": 1360.0},
+    "total_debt": {"FY-3": 4800.0,  "FY-2": 4400.0,  "FY-1": 4000.0,  "FY": 3700.0,  "LTM": 3500.0},
+    "cash":       {"FY-3": 1200.0,  "FY-2": 1500.0,  "FY-1": 1700.0,  "FY": 1900.0,  "LTM": 2000.0},
+    "fcf":        {"FY-3": 560.0,   "FY-2": 720.0,   "FY-1": 880.0,   "FY": 1050.0,  "LTM": 1100.0}
+  },
+  "market_data": {
+    "market_cap": 18000.0,
+    "enterprise_value": 19500.0,
+    "share_price": 72.0,
+    "shares_outstanding": 250.0,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": 8.5, "ev_revenue": 2.4, "pe": 13.2, "pb": 3.8},
+  "comparable_companies": [
+    {"name": "PureOrganic Tech",  "ticker": "PORT", "ev_ebitda": 8.1,  "market_cap": 16500.0},
+    {"name": "CleanSlate Systems","ticker": "CLSS", "ev_ebitda": 9.2,  "market_cap": 21000.0},
+    {"name": "Intact Software",   "ticker": "INTS", "ev_ebitda": 7.8,  "market_cap": 14800.0}
+  ],
+  "transactions": [],
+  "key_developments": [
+    {"date": "2025-11-12", "headline": "NoTransaction Software reports Q3 revenue up 18% YoY", "category": "earnings"},
+    {"date": "2025-07-08", "headline": "NOTX announces $500M share buyback program", "category": "capital_allocation"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": 9000.0, "ebitda_next_fy": 2550.0, "eps_next_fy": 5.82},
+  "earnings_sentiment": {"score": 0.38, "summary": "Positive; steady organic growth with improving margins."}
+}

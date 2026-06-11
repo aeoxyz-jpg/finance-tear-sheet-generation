@@ -1,0 +1,43 @@
+{
+  "ticker": "MERG",
+  "name": "MergeCo Acquisitions Ltd.",
+  "as_of": "2025-12-31",
+  "source_link": "https://fixtures.local/mergeco",
+  "financials": {
+    "revenue":    {"FY-3": 9500.0,  "FY-2": 12800.0, "FY-1": 16400.0, "FY": 20100.0, "LTM": 21500.0},
+    "ebitda":     {"FY-3": 2100.0,  "FY-2": 2900.0,  "FY-1": 3800.0,  "FY": 4700.0,  "LTM": 5000.0},
+    "ebit":       {"FY-3": 1600.0,  "FY-2": 2200.0,  "FY-1": 2900.0,  "FY": 3600.0,  "LTM": 3850.0},
+    "net_income": {"FY-3": 1100.0,  "FY-2": 1550.0,  "FY-1": 2050.0,  "FY": 2600.0,  "LTM": 2780.0},
+    "total_debt": {"FY-3": 4000.0,  "FY-2": 6000.0,  "FY-1": 7500.0,  "FY": 8000.0,  "LTM": 8000.0},
+    "cash":       {"FY-3": 1500.0,  "FY-2": 2000.0,  "FY-1": 2800.0,  "FY": 3200.0,  "LTM": 3500.0},
+    "fcf":        {"FY-3": 850.0,   "FY-2": 1200.0,  "FY-1": 1600.0,  "FY": 2100.0,  "LTM": 2250.0}
+  },
+  "market_data": {
+    "market_cap": 35000.0,
+    "enterprise_value": 39500.0,
+    "share_price": 140.0,
+    "shares_outstanding": 250.0,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": 7.9, "ev_revenue": 1.8, "pe": 12.6, "pb": 4.2},
+  "comparable_companies": [
+    {"name": "RollupCo Inc",    "ticker": "RLPC", "ev_ebitda": 8.5,  "market_cap": 42000.0},
+    {"name": "BuyoutGroup Ltd", "ticker": "BYOG", "ev_ebitda": 7.2,  "market_cap": 29000.0},
+    {"name": "ScaleUp Corp",    "ticker": "SCUP", "ev_ebitda": 9.1,  "market_cap": 51000.0}
+  ],
+  "transactions": [
+    {"date": "2025-08-22", "target": "Epsilon Logistics",   "acquirer": "MERG", "value": 2800.0},
+    {"date": "2025-02-14", "target": "Delta Distribution",  "acquirer": "MERG", "value": 1950.0},
+    {"date": "2024-10-05", "target": "Gamma Services Inc",  "acquirer": "MERG", "value": 3400.0},
+    {"date": "2024-04-18", "target": "Beta Analytics Ltd",  "acquirer": "MERG", "value": 1600.0},
+    {"date": "2023-11-30", "target": "Alpha DataSystems",   "acquirer": "MERG", "value": 2200.0}
+  ],
+  "key_developments": [
+    {"date": "2025-08-22", "headline": "MergeCo closes $2.8B acquisition of Epsilon Logistics", "category": "M&A"},
+    {"date": "2025-02-14", "headline": "MergeCo acquires Delta Distribution for $1.95B, expanding supply chain", "category": "M&A"},
+    {"date": "2025-11-05", "headline": "MergeCo reports Q3 revenue of $5.4B, up 25% pro-forma", "category": "earnings"},
+    {"date": "2025-05-20", "headline": "MergeCo integration of Gamma Services ahead of schedule", "category": "operations"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": 24000.0, "ebitda_next_fy": 5600.0, "eps_next_fy": 12.8},
+  "earnings_sentiment": {"score": 0.52, "summary": "Positive; M&A pipeline intact, integration synergies materializing."}
+}

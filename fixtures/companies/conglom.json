@@ -1,0 +1,44 @@
+{
+  "ticker": "CONG",
+  "name": "Conglomerate Capital Group Inc.",
+  "as_of": "2025-12-31",
+  "source_link": "https://fixtures.local/conglom",
+  "financials": {
+    "revenue":    {"FY-3": 38000.0, "FY-2": 42000.0, "FY-1": 46500.0, "FY": 50000.0, "LTM": 52000.0},
+    "ebitda":     {"FY-3": 7200.0,  "FY-2": 8100.0,  "FY-1": 9000.0,  "FY": 9800.0,  "LTM": 10200.0},
+    "ebit":       {"FY-3": 5500.0,  "FY-2": 6200.0,  "FY-1": 6900.0,  "FY": 7600.0,  "LTM": 7900.0},
+    "net_income": {"FY-3": 3800.0,  "FY-2": 4300.0,  "FY-1": 4900.0,  "FY": 5500.0,  "LTM": 5700.0},
+    "total_debt": {"FY-3": 22000.0, "FY-2": 21000.0, "FY-1": 19500.0, "FY": 18500.0, "LTM": 18000.0},
+    "cash":       {"FY-3": 8000.0,  "FY-2": 9500.0,  "FY-1": 10500.0, "FY": 11500.0, "LTM": 12000.0},
+    "fcf":        {"FY-3": 2900.0,  "FY-2": 3400.0,  "FY-1": 3900.0,  "FY": 4400.0,  "LTM": 4600.0}
+  },
+  "market_data": {
+    "market_cap": 85000.0,
+    "enterprise_value": 91000.0,
+    "share_price": 170.0,
+    "shares_outstanding": 500.0,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": 8.9, "ev_revenue": 1.8, "pe": 14.9, "pb": 2.6},
+  "comparable_companies": [
+    {"name": "IndustrialPure Corp",   "ticker": "INPU", "ev_ebitda": 6.8,  "market_cap": 62000.0},
+    {"name": "HeavyMfg Holdings",     "ticker": "HVMH", "ev_ebitda": 6.0,  "market_cap": 48000.0},
+    {"name": "SpecialtyChemicals Co", "ticker": "SPCC", "ev_ebitda": 7.5,  "market_cap": 55000.0},
+    {"name": "CloudSaaS Leader",      "ticker": "CLSL", "ev_ebitda": 22.0, "market_cap": 210000.0},
+    {"name": "EnterpriseSwitch Inc",  "ticker": "ENSI", "ev_ebitda": 18.5, "market_cap": 145000.0},
+    {"name": "DataCenter REIT",       "ticker": "DCRT", "ev_ebitda": 19.2, "market_cap": 160000.0},
+    {"name": "ConsumerBrands Ltd",    "ticker": "CSBR", "ev_ebitda": 12.4, "market_cap": 95000.0},
+    {"name": "RetailGroup PLC",       "ticker": "RTLG", "ev_ebitda": 9.8,  "market_cap": 72000.0},
+    {"name": "FoodService Global",    "ticker": "FSGL", "ev_ebitda": 11.1, "market_cap": 88000.0}
+  ],
+  "transactions": [
+    {"date": "2024-11-10", "target": "CloudSeg Software", "acquirer": "CONG", "value": 4200.0},
+    {"date": "2023-06-25", "target": "IndusParts Holdings", "acquirer": "CONG", "value": 6800.0}
+  ],
+  "key_developments": [
+    {"date": "2025-10-08", "headline": "Conglomerate Capital reports Q3 revenue of $13.1B across all segments", "category": "earnings"},
+    {"date": "2025-04-15", "headline": "CONG explores strategic review of consumer segment amid mixed comps", "category": "strategy"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": 54500.0, "ebitda_next_fy": 10800.0, "eps_next_fy": 12.2},
+  "earnings_sentiment": {"score": 0.15, "summary": "Mixed; industrial segment strong, technology premium hard to assign."}
+}

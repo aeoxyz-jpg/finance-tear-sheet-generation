@@ -1,0 +1,30 @@
+{
+  "ticker": "THIN",
+  "name": "ThinCap Holdings Ltd.",
+  "as_of": "2025-12-31",
+  "source_link": "https://fixtures.local/thincap",
+  "financials": {
+    "revenue":    {"FY-3": 420.0,  "FY-2": 490.0,  "FY-1": 540.0,  "FY": 610.0,  "LTM": 630.0},
+    "ebitda":     {"FY-3": 85.0,   "FY-2": 98.0,   "FY-1": 110.0,  "FY": 128.0,  "LTM": 132.0},
+    "ebit":       {"FY-3": 62.0,   "FY-2": 74.0,   "FY-1": 84.0,   "FY": 99.0,   "LTM": 102.0},
+    "net_income": {"FY-3": 40.0,   "FY-2": 50.0,   "FY-1": 58.0,   "FY": 68.0,   "LTM": 70.0},
+    "total_debt": {"FY-3": 250.0,  "FY-2": 240.0,  "FY-1": 220.0,  "FY": 210.0,  "LTM": 200.0},
+    "cash":       {"FY-3": 30.0,   "FY-2": 35.0,   "FY-1": 40.0,   "FY": 48.0,   "LTM": 50.0},
+    "fcf":        {"FY-3": 28.0,   "FY-2": 35.0,   "FY-1": 42.0,   "FY": 50.0,   "LTM": 52.0}
+  },
+  "market_data": {
+    "market_cap": 800.0,
+    "enterprise_value": 950.0,
+    "share_price": 8.0,
+    "shares_outstanding": 100.0,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": 7.2, "ev_revenue": 1.5, "pe": 11.4, "pb": 1.8},
+  "comparable_companies": [],
+  "transactions": [],
+  "key_developments": [
+    {"date": "2025-08-05", "headline": "ThinCap posts Q2 revenue of $158M, in-line with guidance", "category": "earnings"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": null, "ebitda_next_fy": null, "eps_next_fy": null},
+  "earnings_sentiment": {"score": null, "summary": null}
+}

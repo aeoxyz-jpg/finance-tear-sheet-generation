@@ -1,0 +1,35 @@
+{
+  "ticker": "PRIV",
+  "name": "PrivCo Solutions LLC",
+  "as_of": "2025-12-31",
+  "source_link": "https://fixtures.local/privco",
+  "financials": {
+    "revenue":    {"FY-3": 180.0,  "FY-2": 215.0,  "FY-1": 260.0,  "FY": 310.0,  "LTM": 325.0},
+    "ebitda":     {"FY-3": 42.0,   "FY-2": 52.0,   "FY-1": 64.0,   "FY": 78.0,   "LTM": 82.0},
+    "ebit":       {"FY-3": 30.0,   "FY-2": 38.0,   "FY-1": 48.0,   "FY": 60.0,   "LTM": 63.0},
+    "net_income": {"FY-3": 20.0,   "FY-2": 26.0,   "FY-1": 34.0,   "FY": 43.0,   "LTM": 45.0},
+    "total_debt": {"FY-3": 90.0,   "FY-2": 85.0,   "FY-1": 80.0,   "FY": 75.0,   "LTM": 70.0},
+    "cash":       {"FY-3": 15.0,   "FY-2": 18.0,   "FY-1": 22.0,   "FY": 28.0,   "LTM": 30.0},
+    "fcf":        {"FY-3": 14.0,   "FY-2": 18.0,   "FY-1": 24.0,   "FY": 30.0,   "LTM": 32.0}
+  },
+  "market_data": {
+    "market_cap": null,
+    "enterprise_value": null,
+    "share_price": null,
+    "shares_outstanding": null,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": null, "ev_revenue": null, "pe": null, "pb": null},
+  "comparable_companies": [
+    {"name": "PublicPeer A", "ticker": "PPA", "ev_ebitda": 9.8,  "market_cap": 850.0},
+    {"name": "PublicPeer B", "ticker": "PPB", "ev_ebitda": 11.2, "market_cap": 1100.0}
+  ],
+  "transactions": [
+    {"date": "2024-07-12", "target": "MicroVend Ltd", "acquirer": "PRIV", "value": 45.0}
+  ],
+  "key_developments": [
+    {"date": "2025-06-15", "headline": "PrivCo Solutions reports record annual revenue of $310M", "category": "earnings"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": null, "ebitda_next_fy": null, "eps_next_fy": null},
+  "earnings_sentiment": {"score": null, "summary": null}
+}

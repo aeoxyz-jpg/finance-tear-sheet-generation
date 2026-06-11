@@ -1,0 +1,37 @@
+{
+  "ticker": "ADRC",
+  "name": "EuroTech AG (ADR: ADRC)",
+  "as_of": "2025-12-31",
+  "source_link": "https://fixtures.local/adrco",
+  "financials": {
+    "revenue":    {"FY-3": 3800.0,  "FY-2": 4200.0,  "FY-1": 4700.0,  "FY": 5100.0,  "LTM": 5300.0},
+    "ebitda":     {"FY-3": 950.0,   "FY-2": 1080.0,  "FY-1": 1220.0,  "FY": 1350.0,  "LTM": 1400.0},
+    "ebit":       {"FY-3": 730.0,   "FY-2": 840.0,   "FY-1": 960.0,   "FY": 1070.0,  "LTM": 1110.0},
+    "net_income": {"FY-3": 520.0,   "FY-2": 600.0,   "FY-1": 690.0,   "FY": 780.0,   "LTM": 810.0},
+    "total_debt": {"FY-3": 3500.0,  "FY-2": 3200.0,  "FY-1": 3000.0,  "FY": 2900.0,  "LTM": 2800.0},
+    "cash":       {"FY-3": 900.0,   "FY-2": 1050.0,  "FY-1": 1200.0,  "FY": 1400.0,  "LTM": 1500.0},
+    "fcf":        {"FY-3": 400.0,   "FY-2": 470.0,   "FY-1": 550.0,   "FY": 630.0,   "LTM": 660.0}
+  },
+  "market_data": {
+    "market_cap": 12000.0,
+    "enterprise_value": 13300.0,
+    "share_price": 24.0,
+    "shares_outstanding": 500.0,
+    "currency": "EUR"
+  },
+  "trading_multiples": {"ev_ebitda": 9.5, "ev_revenue": 2.5, "pe": 14.8, "pb": 3.1},
+  "comparable_companies": [
+    {"name": "SiemensLite GmbH",   "ticker": "SLTG", "ev_ebitda": 9.8,  "market_cap": 14500.0},
+    {"name": "PhilipsAnalog NV",   "ticker": "PANV", "ev_ebitda": 10.2, "market_cap": 18000.0},
+    {"name": "SchneiderMini SA",   "ticker": "SCMN", "ev_ebitda": 8.9,  "market_cap": 11200.0}
+  ],
+  "transactions": [
+    {"date": "2024-05-08", "target": "Nordic Sensors AB", "acquirer": "ADRC", "value": 850.0}
+  ],
+  "key_developments": [
+    {"date": "2025-01-15", "headline": "EuroTech AG ADR ratio adjusted: 1 ADR now represents 2 ordinary shares (prev. 1:1)", "category": "corporate_action"},
+    {"date": "2025-09-22", "headline": "EuroTech AG reports FY revenue of EUR 5.1B, up 8.5% in constant currency", "category": "earnings"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": 5700.0, "ebitda_next_fy": 1520.0, "eps_next_fy": 1.72},
+  "earnings_sentiment": {"score": 0.35, "summary": "Constructive; FX headwinds manageable, R&D pipeline robust."}
+}

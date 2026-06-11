@@ -1,0 +1,39 @@
+{
+  "ticker": "HYPR",
+  "name": "HyperGrowth Technologies Inc.",
+  "as_of": "2025-12-31",
+  "source_link": "https://fixtures.local/hypergrowth",
+  "financials": {
+    "revenue":    {"FY-3": 1000.0,  "FY-2": 1650.0,  "FY-1": 2723.0,  "FY": 4492.0,  "LTM": 7411.0},
+    "ebitda":     {"FY-3": -200.0,  "FY-2": -120.0,  "FY-1": 150.0,   "FY": 480.0,   "LTM": 680.0},
+    "ebit":       {"FY-3": -280.0,  "FY-2": -200.0,  "FY-1": 40.0,    "FY": 320.0,   "LTM": 490.0},
+    "net_income": {"FY-3": -350.0,  "FY-2": -260.0,  "FY-1": -80.0,   "FY": 180.0,   "LTM": 310.0},
+    "total_debt": {"FY-3": 300.0,   "FY-2": 450.0,   "FY-1": 500.0,   "FY": 500.0,   "LTM": 500.0},
+    "cash":       {"FY-3": 1200.0,  "FY-2": 2500.0,  "FY-1": 3800.0,  "FY": 3200.0,  "LTM": 3000.0},
+    "fcf":        {"FY-3": -310.0,  "FY-2": -220.0,  "FY-1": -40.0,   "FY": 220.0,   "LTM": 380.0}
+  },
+  "market_data": {
+    "market_cap": 28000.0,
+    "enterprise_value": 25500.0,
+    "share_price": 56.0,
+    "shares_outstanding": 500.0,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": 37.5, "ev_revenue": 3.4, "pe": 90.3, "pb": 18.6},
+  "comparable_companies": [
+    {"name": "RocketScale Inc",   "ticker": "RKSC", "ev_ebitda": 42.0, "market_cap": 35000.0},
+    {"name": "ViralGrowth Corp",  "ticker": "VRGC", "ev_ebitda": 31.0, "market_cap": 22000.0},
+    {"name": "ExpansionTech Ltd", "ticker": "EXTL", "ev_ebitda": 45.0, "market_cap": 41000.0}
+  ],
+  "transactions": [
+    {"date": "2025-03-12", "target": "MicroAI Labs",    "acquirer": "HYPR", "value": 380.0},
+    {"date": "2024-08-20", "target": "DataStream Inc",  "acquirer": "HYPR", "value": 210.0}
+  ],
+  "key_developments": [
+    {"date": "2025-11-18", "headline": "HyperGrowth hits $7.4B ARR milestone, growing 65% YoY", "category": "earnings"},
+    {"date": "2025-07-22", "headline": "HYPR achieves first full quarter of positive EBITDA", "category": "earnings"},
+    {"date": "2025-01-09", "headline": "HyperGrowth raises $800M Series F at $22B valuation", "category": "funding"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": 12200.0, "ebitda_next_fy": 1400.0, "eps_next_fy": 0.92},
+  "earnings_sentiment": {"score": 0.85, "summary": "Highly bullish; path to profitability confirmed, rule of 40 achieved."}
+}

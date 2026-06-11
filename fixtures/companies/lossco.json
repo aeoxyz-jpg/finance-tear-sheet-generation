@@ -1,0 +1,34 @@
+{
+  "ticker": "LOSS",
+  "name": "LossCo Energy Inc.",
+  "as_of": "2025-12-31",
+  "source_link": "https://fixtures.local/lossco",
+  "financials": {
+    "revenue":    {"FY-3": 2800.0,  "FY-2": 3200.0,  "FY-1": 3600.0,  "FY": 3850.0,  "LTM": 4000.0},
+    "ebitda":     {"FY-3": 320.0,   "FY-2": 80.0,    "FY-1": -150.0,  "FY": -420.0,  "LTM": -580.0},
+    "ebit":       {"FY-3": 210.0,   "FY-2": -30.0,   "FY-1": -290.0,  "FY": -620.0,  "LTM": -780.0},
+    "net_income": {"FY-3": 130.0,   "FY-2": -90.0,   "FY-1": -380.0,  "FY": -750.0,  "LTM": -920.0},
+    "total_debt": {"FY-3": 800.0,   "FY-2": 950.0,   "FY-1": 1050.0,  "FY": 1150.0,  "LTM": 1200.0},
+    "cash":       {"FY-3": 500.0,   "FY-2": 420.0,   "FY-1": 380.0,   "FY": 330.0,   "LTM": 300.0},
+    "fcf":        {"FY-3": 90.0,    "FY-2": -40.0,   "FY-1": -220.0,  "FY": -480.0,  "LTM": -610.0}
+  },
+  "market_data": {
+    "market_cap": 3500.0,
+    "enterprise_value": 4400.0,
+    "share_price": 7.0,
+    "shares_outstanding": 500.0,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": null, "ev_revenue": 1.1, "pe": null, "pb": 0.9},
+  "comparable_companies": [
+    {"name": "DistressedEnergy Co", "ticker": "DSEN", "ev_ebitda": null, "market_cap": 2800.0},
+    {"name": "TurnaroundOil Corp",  "ticker": "TOIL", "ev_ebitda": null, "market_cap": 4100.0}
+  ],
+  "transactions": [],
+  "key_developments": [
+    {"date": "2025-11-03", "headline": "LossCo announces $500M cost restructuring program", "category": "restructuring"},
+    {"date": "2025-03-18", "headline": "LossCo reports Q4 EBITDA loss widens on commodity headwinds", "category": "earnings"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": 4200.0, "ebitda_next_fy": null, "eps_next_fy": null},
+  "earnings_sentiment": {"score": -0.62, "summary": "Bearish; restructuring uncertain, cash burn accelerating."}
+}

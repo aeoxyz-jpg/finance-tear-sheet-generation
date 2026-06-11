@@ -1,0 +1,39 @@
+# Worker models under test (the model axis). Extend freely.
+workers:
+  - provider: anthropic
+    model_id: claude-sonnet-4-6
+    capabilities: {tool_use: true, structured_output: true}
+  - provider: ollama
+    model_id: glm-5.1:cloud   # thinking model; honors schema loosely (wraps JSON in ```fence, ignores enum) — harness strips fences (llm.strip_code_fence), enum violations recorded as plan_valid=False (no fuzzy correct). tool_use verified live (9 calls/2 turns).
+    think: false   # force non-thinking for a SYMMETRIC comparison vs Sonnet (also non-thinking). With thinking on, reflection crashed 6/12 (critic JSON truncated/empty at 8192). think flows into the cache key only when set, so Anthropic keys are unchanged.
+    capabilities: {tool_use: true, structured_output: true}
+  - provider: ollama
+    model_id: deepseek-v4-pro   # verified on ollama.com 2026-06-09; tool_use + structured_output probed True.
+    think: false   # accepted (returns content); non-thinking for symmetry vs Sonnet/glm.
+    capabilities: {tool_use: true, structured_output: true}
+  - provider: ollama
+    model_id: gemini-3-flash-preview   # verified on ollama.com 2026-06-09.
+    think: false   # think=false == default output at adequate budget (verified identical); empty reply only at a tiny <50-token budget — real runs use DEFAULT_MAX_TOKENS=8192.
+    # tool_use re-enabled via flatten_tool_results: multi-turn agentic fails the native functionCall
+    # echo (Gemini needs a thought_signature ollama-python drops), so tool results are flattened into
+    # user text (verified to work). NOTE: this is a different tool-result wire format than the other
+    # models — a documented agentic caveat for gemini.
+    flatten_tool_results: true
+    capabilities: {tool_use: true, structured_output: true}
+  - provider: ollama
+    model_id: minimax-m3   # verified on ollama.com 2026-06-09; tool_use + structured_output probed True; think:false accepted.
+    think: false
+    capabilities: {tool_use: true, structured_output: true}
+  - provider: ollama
+    model_id: kimi-k2.6   # verified on ollama.com 2026-06-09; tool_use + structured_output probed True; think:false accepted.
+    think: false
+    capabilities: {tool_use: true, structured_output: true}
+  - provider: ollama
+    model_id: qwen3.5:397b   # SUBSTITUTE for the user's 'qwen3.6' (not on ollama.com); closest dense general qwen. Probed tool_use + structured_output True; think:false accepted.
+    think: false
+    capabilities: {tool_use: true, structured_output: true}
+
+# Fixed judge — same model regardless of worker, for comparable quality scores (spec 6.4).
+judge:
+  provider: anthropic
+  model_id: claude-sonnet-4-6
