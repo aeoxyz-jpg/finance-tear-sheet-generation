@@ -14,6 +14,11 @@ def test_grounding():
     assert scoring.grounding_points(10, 1, 0, 0) == 22.5
     assert scoring.grounding_points(10, 0, 2, 1) == 19.0      # 25 - 2*3
     assert scoring.grounding_points(4, 4, 5, 5) == 0.0        # floored
+    assert scoring.grounding_points(2, 5, 0, 0) == 0.0        # judge anomaly: c > sentences
+
+
+def test_number_accuracy_floor():
+    assert scoring.number_accuracy_points(2, 5) == 0.0        # out-of-contract input floored
 
 
 def test_structural():

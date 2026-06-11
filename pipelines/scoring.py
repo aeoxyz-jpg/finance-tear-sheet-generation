@@ -24,7 +24,7 @@ class ScoreBreakdown:
 def number_accuracy_points(total: int, incorrect: int) -> float:
     if total == 0:
         return float(WEIGHTS["number_accuracy"])
-    return round(WEIGHTS["number_accuracy"] * (1 - incorrect / total), 2)
+    return round(max(WEIGHTS["number_accuracy"] * (1 - incorrect / total), 0.0), 2)
 
 
 def grounding_points(n_sentences: int, c_count: int,
