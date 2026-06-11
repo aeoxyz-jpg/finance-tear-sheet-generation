@@ -38,3 +38,12 @@ def test_prompt_context_includes_extras():
     ctx = extended_prompt_context(p)
     assert "FINANCIAL HISTORY" in ctx
     assert "consensus_revenue_next_fy" in ctx
+
+
+def test_gap_and_currency_paths():
+    p = build_extended_payload("LOSS")          # fixture with missing estimates
+    missing = [f for f in EXTENSION_FIELD_IDS if p.fields[f].value is None]
+    assert missing and all(f in p.gaps for f in missing)
+    assert all(p.fields[f].display == "—" for f in missing)
+    adrc = build_extended_payload("ADRC")       # EUR fixture
+    assert "EUR millions" in extended_prompt_context(adrc)

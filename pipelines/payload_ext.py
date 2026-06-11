@@ -48,7 +48,7 @@ def extended_prompt_context(payload: Payload) -> str:
     lines = [to_prompt_context(payload)]
     hist = payload.meta.get("financial_history") or {}
     if hist:
-        lines.append("FINANCIAL HISTORY (USD millions, by period):")
+        lines.append(f"FINANCIAL HISTORY ({payload.meta.get('currency', 'USD')} millions, by period):")
         for metric, periods in hist.items():
             cells = "; ".join(f"{p}={v}" for p, v in (periods or {}).items())
             lines.append(f"  {metric}: {cells}")
