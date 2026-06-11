@@ -11,8 +11,8 @@ def test_availability_sparse_payload():
     a = coverage.availability(make_sparse_payload())
     assert a["financial_table"] and a["multiples_table"] and a["trend_narrative"]
     for cat in ("comps_table", "transactions_table", "developments_narrative",
-                "outlook_narrative"):
-        assert not a[cat]
+                "outlook_narrative", "valuation_narrative"):
+        assert not a[cat]    # valuation_narrative needs comps — sparse payload has none
 
 
 def test_proxy_compliant_slots_pass():
@@ -55,8 +55,9 @@ def test_score_coverage_dynamic_denominator():
     judge_covered = {"trend_narrative": True, "valuation_narrative": True,
                      "developments_narrative": False, "outlook_narrative": False}
     out = coverage.score_coverage(p, judge_covered)
-    # available: financial_table 4 + multiples_table 4 + trend 4 + valuation 3 = 15
-    assert out["available"] == 15
+    # available: financial_table 4 + multiples_table 4 + trend 4 = 12
+    # (valuation_narrative needs comps, which the sparse payload lacks)
+    assert out["available"] == 12
     assert out["points"] == 30.0       # earned 15/15, rescaled — absence never penalizes
 
 

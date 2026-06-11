@@ -55,7 +55,9 @@ def availability(payload: Payload) -> dict[str, bool]:
         "comps_table": bool(payload.tables.get("comparables")),
         "transactions_table": bool(payload.tables.get("transactions")),
         "trend_narrative": rev_periods >= 2,
-        "valuation_narrative": mults,
+        # the category criterion is "valuation level RELATIVE TO comps" — without
+        # comparables the comparison is impossible, so the category drops out
+        "valuation_narrative": mults and bool(payload.tables.get("comparables")),
         "developments_narrative": bool(payload.meta.get("key_developments")),
         "outlook_narrative": _has_estimates(payload) or _has_sentiment(payload),
     }
