@@ -2,6 +2,7 @@
 """Mechanical enforcement of the anti-overfit rule (spec §8.1): no fixture-specific
 content — tickers, company names, headline text — anywhere in pipelines/ code or
 prompts. Tests may reference fixtures; production code and prompts may not."""
+import json
 import pathlib
 import re
 from fakedata import store
@@ -14,6 +15,13 @@ def _fixture_strings() -> set[str]:
     for c in store.search_company(""):
         out.add(c["ticker"].lower())
         out.add(c["name"].lower())
+    holdout = PIPE_DIR.parent / "fixtures" / "holdout"
+    for f in sorted(holdout.glob("*.json")):
+        if f.name == "manifest.json":
+            continue
+        d = json.loads(f.read_text())
+        out.add(d["ticker"].lower())
+        out.add(d["name"].lower())
     return out
 
 

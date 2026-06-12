@@ -75,7 +75,13 @@ def main(argv=None) -> None:
     ap.add_argument("--out", default=str(ROOT / "results" / "pipelines" / "run-1"))
     ap.add_argument("--pipelines", default="workflow,agentic")
     ap.add_argument("--refresh", action="store_true")
+    ap.add_argument("--fixtures-dir", default=None,
+                    help="override fixture directory (e.g. fixtures/holdout)")
     args = ap.parse_args(argv)
+
+    if args.fixtures_dir:
+        store._FIX_DIR = pathlib.Path(args.fixtures_dir).resolve()
+        store._load_all.cache_clear()
 
     cfg = load_models(ROOT / "models.yaml")
     worker = next(w for w in cfg.workers if w.model_id == WORKER_MODEL_ID)
