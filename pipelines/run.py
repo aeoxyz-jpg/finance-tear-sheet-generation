@@ -34,7 +34,8 @@ def persist(result: dict, out_dir: pathlib.Path) -> None:
         (d / f"{result['company']}.html").write_text(result["html"])
 
 
-def write_report(results: dict[str, list[dict]], out_dir: pathlib.Path) -> None:
+def write_report(results: dict[str, list[dict]], out_dir: pathlib.Path,
+                 holdout: bool = False) -> None:
     lines = ["# Production pipelines run", ""]
     for pipe, cells in results.items():
         ok = [c for c in cells if not c.get("error")]
@@ -58,11 +59,16 @@ def write_report(results: dict[str, list[dict]], out_dir: pathlib.Path) -> None:
                          f"| {s['grounding']} | {s['coverage']} | {s['structural']} "
                          f"| {eff} | {len(tel)} | {toks} |")
         lines.append("")
-    lines += [
-        "## Caveats", "",
+    provenance = (
+        "- Scores are HOLDOUT scores: fixtures were authored clean-room, frozen, and "
+        "evaluated once with no tuning against them."
+        if holdout else
         "- Scores are dev-set scores: the 12 fixtures were visible during development; "
         "no holdout split. Structural anti-overfit rules applied (no fixture-specific "
-        "prompt/code content; dynamic coverage denominator).",
+        "prompt/code content; dynamic coverage denominator).")
+    lines += [
+        "## Caveats", "",
+        provenance,
         "- Same-family judge bias: worker and judge are both Anthropic Sonnet.",
         "- Coverage text categories come from a judge supplement (1 call/cell); "
         "table categories and all in-loop feedback are deterministic.",
@@ -115,7 +121,7 @@ def main(argv=None) -> None:
             flag = f"  ERROR {r['error']}" if r.get("error") else ""
             print(f"{pipe} {r['company']}: {r['score']['composite']}{flag}")
         results[pipe] = cells
-    write_report(results, out_dir)
+    write_report(results, out_dir, holdout=bool(args.fixtures_dir))
     print(f"report: {out_dir / 'report.md'}")
 
 
