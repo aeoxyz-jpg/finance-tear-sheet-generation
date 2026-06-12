@@ -1,0 +1,37 @@
+{
+  "ticker": "DECL",
+  "name": "Heritage Media Group",
+  "as_of": "2026-05-30",
+  "source_link": "https://fakedata.example/holdout/decl",
+  "financials": {
+    "revenue":    {"FY-3": 4800.0, "FY-2": 4510.0, "FY-1": 4240.0, "FY": 3990.0, "LTM": 3920.0},
+    "ebitda":     {"FY-3": 1060.0, "FY-2": 940.0, "FY-1": 820.0, "FY": 700.0, "LTM": 670.0},
+    "ebit":       {"FY-3": 800.0, "FY-2": 690.0, "FY-1": 580.0, "FY": 470.0, "LTM": 445.0},
+    "net_income": {"FY-3": 560.0, "FY-2": 470.0, "FY-1": 380.0, "FY": 295.0, "LTM": 275.0},
+    "total_debt": {"FY-3": 2400.0, "FY-2": 2350.0, "FY-1": 2300.0, "FY": 2250.0, "LTM": 2250.0},
+    "cash":       {"FY-3": 380.0, "FY-2": 360.0, "FY-1": 340.0, "FY": 320.0, "LTM": 315.0},
+    "fcf":        {"FY-3": 620.0, "FY-2": 530.0, "FY-1": 440.0, "FY": 350.0, "LTM": 330.0}
+  },
+  "market_data": {
+    "market_cap": 1100.0,
+    "enterprise_value": 3035.0,
+    "share_price": 10.0,
+    "shares_outstanding": 110.0,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": 4.5, "ev_revenue": 0.8, "pe": 4.0, "pb": 0.6},
+  "comparable_companies": [
+    {"name": "Granford Publishing Group", "ticker": "GRPB", "ev_ebitda": 4.1, "market_cap": 900.0},
+    {"name": "Westvale Broadcasting", "ticker": "WVBC", "ev_ebitda": 5.0, "market_cap": 1500.0},
+    {"name": "Corriden Media Holdings", "ticker": "CDNM", "ev_ebitda": 4.8, "market_cap": 750.0}
+  ],
+  "transactions": [
+    {"date": "2025-08-22", "target": "Heritage Magazine Unit", "acquirer": "Fenwick Press Acquisitions", "value": 260.0}
+  ],
+  "key_developments": [
+    {"date": "2026-02-26", "headline": "Launches enterprise-wide cost-reduction program", "category": "restructuring"},
+    {"date": "2025-12-10", "headline": "Credit rating downgraded on declining advertising revenue", "category": "credit"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": 3700.0, "ebitda_next_fy": 600.0, "eps_next_fy": 2.1},
+  "earnings_sentiment": {"score": -0.55, "summary": "Management struck a cautious tone, citing persistent advertising-revenue pressure and guiding below prior expectations."}
+}

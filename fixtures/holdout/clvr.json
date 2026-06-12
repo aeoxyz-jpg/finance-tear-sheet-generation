@@ -1,0 +1,36 @@
+{
+  "ticker": "CLVR",
+  "name": "Cellvora Therapeutics",
+  "as_of": "2026-05-30",
+  "source_link": "https://fakedata.example/holdout/clvr",
+  "financials": {
+    "revenue":    {"FY-3": 8.0, "FY-2": 15.0, "FY-1": 24.0, "FY": 36.0, "LTM": 40.0},
+    "ebitda":     {"FY-3": -180.0, "FY-2": -210.0, "FY-1": -240.0, "FY": -265.0, "LTM": -270.0},
+    "ebit":       {"FY-3": -190.0, "FY-2": -222.0, "FY-1": -252.0, "FY": -278.0, "LTM": -284.0},
+    "net_income": {"FY-3": -195.0, "FY-2": -228.0, "FY-1": -260.0, "FY": -288.0, "LTM": -294.0},
+    "total_debt": {"FY-3": 40.0, "FY-2": 45.0, "FY-1": 48.0, "FY": 50.0, "LTM": 50.0},
+    "cash":       {"FY-3": 350.0, "FY-2": 520.0, "FY-1": 420.0, "FY": 780.0, "LTM": 800.0},
+    "fcf":        {"FY-3": -170.0, "FY-2": -200.0, "FY-1": -235.0, "FY": -255.0, "LTM": -262.0}
+  },
+  "market_data": {
+    "market_cap": 1950.0,
+    "enterprise_value": 1200.0,
+    "share_price": 15.0,
+    "shares_outstanding": 130.0,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": null, "ev_revenue": 30.0, "pe": null, "pb": 3.9},
+  "comparable_companies": [
+    {"name": "Talyx Bio", "ticker": "TLYX", "ev_ebitda": null, "market_cap": 2400.0},
+    {"name": "Oromund Therapeutics", "ticker": "ORMT", "ev_ebitda": null, "market_cap": 3100.0},
+    {"name": "Seralune Biosciences", "ticker": "SRLB", "ev_ebitda": null, "market_cap": 1600.0}
+  ],
+  "transactions": [],
+  "key_developments": [
+    {"date": "2026-04-21", "headline": "Reports positive Phase 2 readout for lead oncology candidate", "category": "clinical"},
+    {"date": "2026-03-03", "headline": "Receives FDA fast-track designation for CVX-201 program", "category": "regulatory"},
+    {"date": "2026-01-15", "headline": "Completes follow-on equity offering to fund Phase 3 preparation", "category": "financing"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": 65.0, "ebitda_next_fy": -250.0, "eps_next_fy": -2.05},
+  "earnings_sentiment": {"score": 0.6, "summary": "Strong enthusiasm following the Phase 2 data; cash runway viewed as ample."}
+}

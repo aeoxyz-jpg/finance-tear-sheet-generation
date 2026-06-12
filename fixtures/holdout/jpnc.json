@@ -1,0 +1,38 @@
+{
+  "ticker": "JPNC",
+  "name": "Kyowa Denki K.K. (ADR)",
+  "as_of": "2026-05-30",
+  "source_link": "https://fakedata.example/holdout/jpnc",
+  "financials": {
+    "revenue":    {"FY-3": 2080000.0, "FY-2": 2180000.0, "FY-1": 2280000.0, "FY": 2370000.0, "LTM": 2400000.0},
+    "ebitda":     {"FY-3": 270000.0, "FY-2": 292000.0, "FY-1": 312000.0, "FY": 330000.0, "LTM": 336000.0},
+    "ebit":       {"FY-3": 195000.0, "FY-2": 214000.0, "FY-1": 232000.0, "FY": 248000.0, "LTM": 252000.0},
+    "net_income": {"FY-3": 128000.0, "FY-2": 142000.0, "FY-1": 156000.0, "FY": 168000.0, "LTM": 171000.0},
+    "total_debt": {"FY-3": 480000.0, "FY-2": 470000.0, "FY-1": 460000.0, "FY": 450000.0, "LTM": 450000.0},
+    "cash":       {"FY-3": 520000.0, "FY-2": 560000.0, "FY-1": 600000.0, "FY": 640000.0, "LTM": 650000.0},
+    "fcf":        {"FY-3": 110000.0, "FY-2": 122000.0, "FY-1": 134000.0, "FY": 145000.0, "LTM": 148000.0}
+  },
+  "market_data": {
+    "market_cap": 2900000.0,
+    "enterprise_value": 2700000.0,
+    "share_price": 2000.0,
+    "shares_outstanding": 1450.0,
+    "currency": "JPY"
+  },
+  "trading_multiples": {"ev_ebitda": 8.0, "ev_revenue": 1.1, "pe": 17.0, "pb": 1.4},
+  "comparable_companies": [
+    {"name": "Aozora Precision Industries", "ticker": "APRI", "ev_ebitda": 7.2, "market_cap": 1900000.0},
+    {"name": "Shinmachi Electric", "ticker": "SHME", "ev_ebitda": 9.1, "market_cap": 3400000.0},
+    {"name": "Tachihara Components", "ticker": "TCHC", "ev_ebitda": 6.8, "market_cap": 1200000.0},
+    {"name": "Hokuriku Device Works", "ticker": "HKDW", "ev_ebitda": 8.5, "market_cap": 2600000.0}
+  ],
+  "transactions": [
+    {"date": "2025-09-10", "target": "Misora Sensor Co.", "acquirer": "Kyowa Denki K.K.", "value": 68000.0}
+  ],
+  "key_developments": [
+    {"date": "2026-04-02", "headline": "Expands silicon-carbide power module capacity at Nagano plant", "category": "operations"},
+    {"date": "2026-01-28", "headline": "Announces medium-term plan targeting margin improvement", "category": "strategy"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": 2480000.0, "ebitda_next_fy": 350000.0, "eps_next_fy": 122.0},
+  "earnings_sentiment": {"score": 0.25, "summary": "Tone steady; automotive electrification demand offsetting consumer softness."}
+}

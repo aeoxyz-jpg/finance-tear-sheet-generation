@@ -1,0 +1,34 @@
+{
+  "ticker": "FAMH",
+  "name": "Hartwell Family Holdings",
+  "as_of": "2026-05-30",
+  "source_link": "https://fakedata.example/holdout/famh",
+  "financials": {
+    "revenue":    {"FY-3": null, "FY-2": null, "FY-1": null, "FY": 1750.0, "LTM": 1800.0},
+    "ebitda":     {"FY-3": null, "FY-2": null, "FY-1": null, "FY": 210.0, "LTM": 220.0},
+    "ebit":       {"FY-3": null, "FY-2": null, "FY-1": null, "FY": 165.0, "LTM": 172.0},
+    "net_income": {"FY-3": null, "FY-2": null, "FY-1": null, "FY": 105.0, "LTM": 110.0},
+    "total_debt": {"FY-3": null, "FY-2": null, "FY-1": null, "FY": 350.0, "LTM": 340.0},
+    "cash":       {"FY-3": null, "FY-2": null, "FY-1": null, "FY": 95.0, "LTM": 100.0},
+    "fcf":        {"FY-3": null, "FY-2": null, "FY-1": null, "FY": 80.0, "LTM": 88.0}
+  },
+  "market_data": {
+    "market_cap": null,
+    "enterprise_value": null,
+    "share_price": null,
+    "shares_outstanding": null,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": null, "ev_revenue": null, "pe": null, "pb": null},
+  "comparable_companies": [
+    {"name": "Greenfield Agrarian Co", "ticker": "GRAC", "ev_ebitda": 9.5, "market_cap": 5200.0}
+  ],
+  "transactions": [
+    {"date": "2025-03-14", "target": "Millbrook Orchards", "acquirer": "Hartwell Family Holdings", "value": 120.0}
+  ],
+  "key_developments": [
+    {"date": "2026-02-09", "headline": "Announces leadership succession to fourth-generation family member", "category": "management"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": null, "ebitda_next_fy": null, "eps_next_fy": null},
+  "earnings_sentiment": {"score": null, "summary": null}
+}

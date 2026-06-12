@@ -1,0 +1,38 @@
+{
+  "ticker": "LEVR",
+  "name": "Irongate Industrial Holdings",
+  "as_of": "2026-05-30",
+  "source_link": "https://fakedata.example/holdout/levr",
+  "financials": {
+    "revenue":    {"FY-3": 4150.0, "FY-2": 4260.0, "FY-1": 4360.0, "FY": 4460.0, "LTM": 4500.0},
+    "ebitda":     {"FY-3": 1020.0, "FY-2": 1060.0, "FY-1": 1100.0, "FY": 1135.0, "LTM": 1150.0},
+    "ebit":       {"FY-3": 700.0, "FY-2": 730.0, "FY-1": 760.0, "FY": 785.0, "LTM": 795.0},
+    "net_income": {"FY-3": 12.0, "FY-2": 16.0, "FY-1": 20.0, "FY": 24.0, "LTM": 25.0},
+    "total_debt": {"FY-3": 7300.0, "FY-2": 7200.0, "FY-1": 7050.0, "FY": 6920.0, "LTM": 6900.0},
+    "cash":       {"FY-3": 250.0, "FY-2": 230.0, "FY-1": 260.0, "FY": 280.0, "LTM": 290.0},
+    "fcf":        {"FY-3": 180.0, "FY-2": 200.0, "FY-1": 220.0, "FY": 240.0, "LTM": 250.0}
+  },
+  "market_data": {
+    "market_cap": 1500.0,
+    "enterprise_value": 8110.0,
+    "share_price": 15.0,
+    "shares_outstanding": 100.0,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": 7.1, "ev_revenue": 1.8, "pe": 60.0, "pb": 2.0},
+  "comparable_companies": [
+    {"name": "Forgemont Holdings", "ticker": "FGMH", "ev_ebitda": 7.5, "market_cap": 3800.0},
+    {"name": "Ralston Heavy Industries", "ticker": "RHVI", "ev_ebitda": 6.9, "market_cap": 5200.0},
+    {"name": "Caldermill Group", "ticker": "CLDM", "ev_ebitda": 8.0, "market_cap": 2900.0}
+  ],
+  "transactions": [
+    {"date": "2025-01-21", "target": "Keldon Hydraulics", "acquirer": "Irongate Industrial Holdings", "value": 380.0}
+  ],
+  "key_developments": [
+    {"date": "2025-09-17", "headline": "Sponsor Crestbourne Capital completes dividend recapitalization", "category": "financing"},
+    {"date": "2026-02-04", "headline": "Management reiterates target of reducing leverage below four times EBITDA by 2028", "category": "strategy"},
+    {"date": "2026-04-22", "headline": "Renews long-term supply agreement with key aerospace customer", "category": "commercial"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": 4650.0, "ebitda_next_fy": 1200.0, "eps_next_fy": 0.35},
+  "earnings_sentiment": {"score": 0.0, "summary": "Neutral call tone; deleveraging progress offset by soft end-market demand."}
+}

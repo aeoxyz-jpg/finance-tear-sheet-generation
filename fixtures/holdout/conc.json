@@ -1,0 +1,39 @@
+{
+  "ticker": "CONC",
+  "name": "Apertura Components",
+  "as_of": "2026-05-30",
+  "source_link": "https://fakedata.example/holdout/conc",
+  "financials": {
+    "revenue":    {"FY-3": 6150.0, "FY-2": 6450.0, "FY-1": 6700.0, "FY": 6950.0, "LTM": 7050.0},
+    "ebitda":     {"FY-3": 1040.0, "FY-2": 1110.0, "FY-1": 1170.0, "FY": 1230.0, "LTM": 1255.0},
+    "ebit":       {"FY-3": 760.0, "FY-2": 815.0, "FY-1": 865.0, "FY": 915.0, "LTM": 935.0},
+    "net_income": {"FY-3": 490.0, "FY-2": 530.0, "FY-1": 565.0, "FY": 600.0, "LTM": 615.0},
+    "total_debt": {"FY-3": 2200.0, "FY-2": 2150.0, "FY-1": 2100.0, "FY": 2050.0, "LTM": 2050.0},
+    "cash":       {"FY-3": 800.0, "FY-2": 850.0, "FY-1": 900.0, "FY": 950.0, "LTM": 960.0},
+    "fcf":        {"FY-3": 450.0, "FY-2": 490.0, "FY-1": 525.0, "FY": 560.0, "LTM": 575.0}
+  },
+  "market_data": {
+    "market_cap": 11800.0,
+    "enterprise_value": 12890.0,
+    "share_price": 73.75,
+    "shares_outstanding": 160.0,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": 10.3, "ev_revenue": 1.8, "pe": 19.2, "pb": 2.7},
+  "comparable_companies": [
+    {"name": "Veslar Precision", "ticker": "VSLP", "ev_ebitda": 9.6, "market_cap": 8200.0},
+    {"name": "Ondrika Industrial Optics", "ticker": "ONIO", "ev_ebitda": 11.0, "market_cap": 5400.0},
+    {"name": "Tarquin Machining Group", "ticker": "TQMG", "ev_ebitda": 8.8, "market_cap": 3100.0}
+  ],
+  "transactions": [
+    {"date": "2026-05-06", "target": "Apertura Optics Unit", "acquirer": "Halverton Industrial Group", "value": 1400.0},
+    {"date": "2024-10-02", "target": "Brennick Tooling", "acquirer": "Apertura Components", "value": 230.0}
+  ],
+  "key_developments": [
+    {"date": "2026-03-18", "headline": "Largest customer renews five-year supply agreement representing approximately 38% of revenue", "category": "commercial"},
+    {"date": "2026-05-06", "headline": "Announces pending divestiture of optics unit for $1.4B, expected to close Q4 2026", "category": "m&a"},
+    {"date": "2026-01-13", "headline": "Completes scheduled maintenance upgrade at Ohio precision plant", "category": "operations"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": 7400.0, "ebitda_next_fy": 1330.0, "eps_next_fy": 4.05},
+  "earnings_sentiment": {"score": 0.2, "summary": "Slightly positive; contract renewal de-risks outlook though customer concentration remains a watch item."}
+}

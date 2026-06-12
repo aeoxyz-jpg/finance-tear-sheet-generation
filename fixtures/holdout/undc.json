@@ -1,0 +1,40 @@
+{
+  "ticker": "UNDC",
+  "name": "Brightline Retail Corp",
+  "as_of": "2026-05-30",
+  "source_link": "https://fakedata.example/holdout/undc",
+  "financials": {
+    "revenue":    {"FY-3": 19800.0, "FY-2": 20600.0, "FY-1": 21200.0, "FY": 21800.0, "LTM": 22100.0},
+    "ebitda":     {"FY-3": 1750.0, "FY-2": 1860.0, "FY-1": 1950.0, "FY": 2060.0, "LTM": 2100.0},
+    "ebit":       {"FY-3": 1150.0, "FY-2": 1240.0, "FY-1": 1310.0, "FY": 1400.0, "LTM": 1430.0},
+    "net_income": {"FY-3": 760.0, "FY-2": 830.0, "FY-1": 890.0, "FY": 960.0, "LTM": 985.0},
+    "total_debt": {"FY-3": 4800.0, "FY-2": 4700.0, "FY-1": 4600.0, "FY": 4500.0, "LTM": 4500.0},
+    "cash":       {"FY-3": 1500.0, "FY-2": 1600.0, "FY-1": 1700.0, "FY": 1800.0, "LTM": 1820.0},
+    "fcf":        {"FY-3": 700.0, "FY-2": 760.0, "FY-1": 820.0, "FY": 880.0, "LTM": 905.0}
+  },
+  "market_data": {
+    "market_cap": 16500.0,
+    "enterprise_value": 19180.0,
+    "share_price": 55.0,
+    "shares_outstanding": 300.0,
+    "currency": "USD"
+  },
+  "trading_multiples": {"ev_ebitda": 9.1, "ev_revenue": 0.9, "pe": 16.8, "pb": 2.9},
+  "comparable_companies": [
+    {"name": "Marleth Stores", "ticker": "MRLS", "ev_ebitda": 8.5, "market_cap": 21000.0},
+    {"name": "Quaymont Retail Group", "ticker": "QYRG", "ev_ebitda": 9.8, "market_cap": 28000.0},
+    {"name": "Fairhollow Markets", "ticker": "FRHM", "ev_ebitda": 7.9, "market_cap": 12500.0},
+    {"name": "Bellgrave Home & Goods", "ticker": "BLGH", "ev_ebitda": 10.4, "market_cap": 9400.0}
+  ],
+  "transactions": [
+    {"date": "2025-06-12", "target": "Pinebar Outfitters", "acquirer": "Brightline Retail Corp", "value": null},
+    {"date": "2025-10-23", "target": "Cartwell Home Essentials", "acquirer": "Brightline Retail Corp", "value": null},
+    {"date": "2026-01-29", "target": "Brightline Midwest Store Portfolio", "acquirer": "Keystead Property Partners", "value": null}
+  ],
+  "key_developments": [
+    {"date": "2026-04-14", "headline": "Reports same-store-sales recovery across core banners", "category": "earnings"},
+    {"date": "2026-03-02", "headline": "Launches unified loyalty program across all retail banners", "category": "commercial"}
+  ],
+  "consensus_estimates": {"revenue_next_fy": 23000.0, "ebitda_next_fy": 2250.0, "eps_next_fy": 3.55},
+  "earnings_sentiment": {"score": 0.35, "summary": "Mildly positive; traffic recovery and loyalty rollout seen supporting margins."}
+}
