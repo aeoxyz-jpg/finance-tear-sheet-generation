@@ -17,8 +17,6 @@ def _fixture_strings() -> set[str]:
         out.add(c["name"].lower())
     holdout = PIPE_DIR.parent / "fixtures" / "holdout"
     for f in sorted(holdout.glob("*.json")):
-        if f.name == "manifest.json":
-            continue
         d = json.loads(f.read_text())
         out.add(d["ticker"].lower())
         out.add(d["name"].lower())
