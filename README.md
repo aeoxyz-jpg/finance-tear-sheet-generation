@@ -1,5 +1,12 @@
 # finance tear-sheet generation — a design-risk spike
 
+![Python](https://img.shields.io/badge/python-3.12%2B-3776AB?logo=python&logoColor=white)
+![Tests](https://img.shields.io/badge/tests-413%20offline-brightgreen)
+![Designs](https://img.shields.io/badge/designs-7-orange)
+![Worker models](https://img.shields.io/badge/worker%20models-7-8A2BE2)
+[![Correction](https://img.shields.io/badge/headline%20finding-corrected%202026--07--07-red)](#correction--revision-history)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 A head-to-head experiment, **not a product**. It builds seven different
 implementations of *one task* — generate a company tear sheet from financial
 data — and compares them on the **same frozen synthetic data** with the **same
@@ -10,12 +17,13 @@ The central question: **how much do orchestration design and a deterministic
 number "rail" change whether you can trust the numbers an LLM puts in a
 financial document?**
 
-> **Note:** this spike's original headline finding ("agentic designs fabricate
-> 24–39% of their inline numbers") was later found to be a measurement artifact
-> and corrected. The findings below are the corrected ones; the full story is in
+> [!IMPORTANT]
+> This spike's original headline finding ("agentic designs fabricate 24–39% of
+> their inline numbers") was later found to be a measurement artifact and
+> corrected. The findings below are the corrected ones; the full story is in
 > [Correction & revision history](#correction--revision-history) at the bottom.
 
-## Two variables under test
+## 🧪 Two variables under test
 
 A factorial matrix holds everything else constant (synthetic data, provider
 abstraction, schemas, validation gate, renderer, judge, response cache):
@@ -31,7 +39,7 @@ observation, and design metrics are never pooled across models. The judge is
 fixed to Anthropic Sonnet regardless of worker, so quality scores stay
 comparable (with a same-family judge-bias caveat recorded in the report).
 
-## The seven designs
+## 🏗️ The seven designs
 
 | Design | One LLM call? | Number rail | Role |
 |--------|---------------|-------------|------|
@@ -43,8 +51,13 @@ comparable (with a same-family judge-bias caveat recorded in the report).
 | `agentic_verified` | agent loop | soft (detect + correct) | agentic + deterministic `number_check` fix loop |
 | `agentic_reflection` | agent loop + critic/revise | hard | agentic gather + rail + reflection |
 
-`single_shot` / `prompt_chaining` / `agentic` / `agentic_grounded` fill the four
-corners of a 2×2 (orchestration {deterministic, agentic} × rail {none, hard}).
+Four of them fill the corners of a 2×2 factorial; the other three are variants
+along its edges:
+
+| | **rail: none** | **rail: hard** |
+|---|---|---|
+| **orchestration: deterministic** | `single_shot` | `prompt_chaining` |
+| **orchestration: agentic** | `agentic` | `agentic_grounded` |
 
 **Hard rail** = the model emits `{{placeholder}}` tokens only; real numbers are
 substituted deterministically from ground truth afterward, and a hallucinated
@@ -52,7 +65,20 @@ placeholder name is **rejected** (never fuzzy-corrected). **Soft rail** = the
 model writes numbers, then a deterministic `number_check` flags mismatches and
 the model is asked to fix them.
 
-## Headline findings (as corrected, 2026-07-07)
+```mermaid
+flowchart LR
+    M["LLM narrative<br/>writes only placeholder tokens<br/>like <code>revenue_ltm</code>"] --> V{"validation<br/>gate"}
+    V -- "unknown token" --> X["rejected<br/>never fuzzy-corrected"]
+    V -- "all tokens valid" --> R["deterministic<br/>renderer"]
+    P[("ground-truth<br/>payload")] --> R
+    R --> D["final document<br/>every number substituted<br/>and machine-verifiable"]
+    style M fill:#ECECFF,stroke:#9370DB
+    style R fill:#d5e8d4,stroke:#82b366
+    style D fill:#d5e8d4,stroke:#82b366
+    style X fill:#f8cecc,stroke:#b85450
+```
+
+## 📊 Headline findings (as corrected, 2026-07-07)
 
 - **The hard rail's real value is verifiability by construction.** With the
   model forbidden from writing a digit, every number in the final document is
@@ -79,7 +105,7 @@ the model is asked to fix them.
   designs, structured output gates the placeholder designs. A model lacking a
   capability records `capability_unsupported` rather than crashing.
 
-## Also here: two production pipelines (`pipelines/`)
+## 🏭 Also here: two production pipelines (`pipelines/`)
 
 A separate production-oriented track built on the spike's lessons, sharing one
 output contract (code renders every numeric table; the LLM writes four
@@ -89,11 +115,11 @@ orchestrates: a fixed workflow with targeted repair, or an agent with tools.
 Their evaluation runs (dev + one-shot holdout) are not committed here; the
 methodology and results are written up in the accompanying article series.
 
-## Setup
+## ⚙️ Setup
 
     uv venv && uv pip install -e ".[dev]"
 
-## Test
+## ✅ Test
 
     uv run pytest          # 413 offline tests; `live` tests deselected
     uv run pytest -m live  # live provider/judge tests (needs API keys)
@@ -104,7 +130,7 @@ API keys are read from the macOS Keychain at runtime (services
 `temperature=0` everywhere; reproducibility comes from a VCR-style response
 cache (`common/cache.py`), not from byte-identical API output.
 
-## Layout
+## 🗺️ Layout
 
 ```
 fixtures/*.json     synthetic frozen data — 12 cases, each tuned to one edge case
@@ -116,7 +142,7 @@ harness/            run → compare → report (per-model summary matrices + tra
 results/            committed comparison reports, run manifests, and the correction record
 ```
 
-## Where to read next
+## 📚 Where to read next
 
 - `results/*/report.md` — the generated comparison reports (each carries a
   correction banner; tables are raw benchmark output).
@@ -127,7 +153,12 @@ results/            committed comparison reports, run manifests, and the correct
   (`pipelines/checks.py`), coverage with a dynamic denominator
   (`pipelines/coverage.py`), and the composite score (`pipelines/scoring.py`).
 
-## Correction & revision history
+<a id="correction--revision-history"></a>
+## 🧾 Correction & revision history
+
+> [!WARNING]
+> If you cited this repo's "agentic fabricates 24–39% of inline numbers" figure
+> anywhere, it needs updating: the genuine fabrication rate re-measured at ≈0%.
 
 **2026-07-07 — the original headline finding was wrong, and here is exactly
 how.** This spike shipped for a month claiming that unguarded agentic designs
@@ -164,6 +195,6 @@ it, one write-up too late. It is recorded here rather than silently rewritten
 because a benchmark that corrects itself in public is worth more than one that
 was never wrong.
 
-## License
+## 📄 License
 
 MIT — see [`LICENSE`](LICENSE).
