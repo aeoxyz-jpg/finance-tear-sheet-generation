@@ -1,5 +1,12 @@
 # Tear Sheet Design-Risk Spike — Comparison Report
 
+> **CORRECTION (2026-07-07):** the `incorrect_rate` and `grounding_C` columns below for tool-using
+> (agentic-family) designs measure a data-scope mismatch between what the design legitimately saw (full
+> tool/fixture data) and what the grading was scoped to (the narrow 15-field payload) — **not**
+> fabrication or hallucination. Genuine fabrication, re-measured by tracing every flagged token back to
+> its tool output, is ≈0% on all 7 models tested. Tables below are left unedited (raw benchmark output);
+> see `results/CORRECTION-2026-07-07-grading-scope-artifact.md` for the corrected interpretation and the reproducible re-measurement.
+
 ## Worker model: `glm-5.1:cloud`
 | design | n | err | calls | in_tok | out_tok | latency_ms | valid_pass | incorrect_rate | grounding_C | unsupported | plan_valid | iters |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|

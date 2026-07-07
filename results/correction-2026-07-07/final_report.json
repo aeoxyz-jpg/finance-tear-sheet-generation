@@ -1,0 +1,992 @@
+{
+  "Sonnet (run-anthropic-ollama)": {
+    "label": "Sonnet (run-anthropic-ollama)",
+    "n_cells": 12,
+    "total_incorrect_tokens": 177,
+    "pct_tool_backed": 0.9322033898305084,
+    "pct_derived": 0.06779661016949153,
+    "pct_unsupported": 0.0,
+    "published_incorrect_rate_mean": 0.28179334614522344,
+    "published_incorrect_rate_pooled": 0.2757009345794392,
+    "corrected_genuine_rate_mean": 0.0,
+    "corrected_genuine_rate_pooled": 0.0,
+    "rows": [
+      {
+        "fixture": "ACME",
+        "total_findings": 66,
+        "incorrect": 5,
+        "tool_backed": 5,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "ADRC",
+        "total_findings": 42,
+        "incorrect": 7,
+        "tool_backed": 6,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "AMBG",
+        "total_findings": 59,
+        "incorrect": 30,
+        "tool_backed": 30,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "BANK",
+        "total_findings": 27,
+        "incorrect": 8,
+        "tool_backed": 8,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "CONG",
+        "total_findings": 60,
+        "incorrect": 32,
+        "tool_backed": 30,
+        "derived": 2,
+        "unsupported": 0
+      },
+      {
+        "fixture": "HYPR",
+        "total_findings": 37,
+        "incorrect": 5,
+        "tool_backed": 5,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "LOSS",
+        "total_findings": 37,
+        "incorrect": 13,
+        "tool_backed": 13,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MEGA",
+        "total_findings": 68,
+        "incorrect": 6,
+        "tool_backed": 5,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MERG",
+        "total_findings": 69,
+        "incorrect": 6,
+        "tool_backed": 4,
+        "derived": 2,
+        "unsupported": 0
+      },
+      {
+        "fixture": "NOTX",
+        "total_findings": 67,
+        "incorrect": 9,
+        "tool_backed": 8,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "PRIV",
+        "total_findings": 59,
+        "incorrect": 35,
+        "tool_backed": 31,
+        "derived": 4,
+        "unsupported": 0
+      },
+      {
+        "fixture": "THIN",
+        "total_findings": 51,
+        "incorrect": 21,
+        "tool_backed": 20,
+        "derived": 1,
+        "unsupported": 0
+      }
+    ]
+  },
+  "glm-5.1 (run-anthropic-ollama)": {
+    "label": "glm-5.1 (run-anthropic-ollama)",
+    "n_cells": 12,
+    "total_incorrect_tokens": 103,
+    "pct_tool_backed": 0.9029126213592233,
+    "pct_derived": 0.0970873786407767,
+    "pct_unsupported": 0.0,
+    "published_incorrect_rate_mean": 0.391056086314707,
+    "published_incorrect_rate_pooled": 0.38721804511278196,
+    "corrected_genuine_rate_mean": 0.0,
+    "corrected_genuine_rate_pooled": 0.0,
+    "rows": [
+      {
+        "fixture": "ACME",
+        "total_findings": 20,
+        "incorrect": 5,
+        "tool_backed": 5,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "ADRC",
+        "total_findings": 30,
+        "incorrect": 9,
+        "tool_backed": 8,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "AMBG",
+        "total_findings": 18,
+        "incorrect": 4,
+        "tool_backed": 4,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "BANK",
+        "total_findings": 22,
+        "incorrect": 6,
+        "tool_backed": 6,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "CONG",
+        "total_findings": 20,
+        "incorrect": 12,
+        "tool_backed": 11,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "HYPR",
+        "total_findings": 29,
+        "incorrect": 8,
+        "tool_backed": 8,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "LOSS",
+        "total_findings": 21,
+        "incorrect": 14,
+        "tool_backed": 13,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MEGA",
+        "total_findings": 22,
+        "incorrect": 18,
+        "tool_backed": 17,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MERG",
+        "total_findings": 21,
+        "incorrect": 6,
+        "tool_backed": 4,
+        "derived": 2,
+        "unsupported": 0
+      },
+      {
+        "fixture": "NOTX",
+        "total_findings": 20,
+        "incorrect": 6,
+        "tool_backed": 6,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "PRIV",
+        "total_findings": 21,
+        "incorrect": 9,
+        "tool_backed": 6,
+        "derived": 3,
+        "unsupported": 0
+      },
+      {
+        "fixture": "THIN",
+        "total_findings": 22,
+        "incorrect": 6,
+        "tool_backed": 5,
+        "derived": 1,
+        "unsupported": 0
+      }
+    ]
+  },
+  "claude-sonnet-4-6 (run-2x3)": {
+    "label": "claude-sonnet-4-6 (run-2x3)",
+    "n_cells": 12,
+    "total_incorrect_tokens": 177,
+    "pct_tool_backed": 0.9322033898305084,
+    "pct_derived": 0.06779661016949153,
+    "pct_unsupported": 0.0,
+    "published_incorrect_rate_mean": 0.28179334614522344,
+    "published_incorrect_rate_pooled": 0.2757009345794392,
+    "corrected_genuine_rate_mean": 0.0,
+    "corrected_genuine_rate_pooled": 0.0,
+    "rows": [
+      {
+        "fixture": "ACME",
+        "total_findings": 66,
+        "incorrect": 5,
+        "tool_backed": 5,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "ADRC",
+        "total_findings": 42,
+        "incorrect": 7,
+        "tool_backed": 6,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "AMBG",
+        "total_findings": 59,
+        "incorrect": 30,
+        "tool_backed": 30,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "BANK",
+        "total_findings": 27,
+        "incorrect": 8,
+        "tool_backed": 8,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "CONG",
+        "total_findings": 60,
+        "incorrect": 32,
+        "tool_backed": 30,
+        "derived": 2,
+        "unsupported": 0
+      },
+      {
+        "fixture": "HYPR",
+        "total_findings": 37,
+        "incorrect": 5,
+        "tool_backed": 5,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "LOSS",
+        "total_findings": 37,
+        "incorrect": 13,
+        "tool_backed": 13,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MEGA",
+        "total_findings": 68,
+        "incorrect": 6,
+        "tool_backed": 5,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MERG",
+        "total_findings": 69,
+        "incorrect": 6,
+        "tool_backed": 4,
+        "derived": 2,
+        "unsupported": 0
+      },
+      {
+        "fixture": "NOTX",
+        "total_findings": 67,
+        "incorrect": 9,
+        "tool_backed": 8,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "PRIV",
+        "total_findings": 59,
+        "incorrect": 35,
+        "tool_backed": 31,
+        "derived": 4,
+        "unsupported": 0
+      },
+      {
+        "fixture": "THIN",
+        "total_findings": 51,
+        "incorrect": 21,
+        "tool_backed": 20,
+        "derived": 1,
+        "unsupported": 0
+      }
+    ]
+  },
+  "deepseek-v4-pro (run-2x3)": {
+    "label": "deepseek-v4-pro (run-2x3)",
+    "n_cells": 12,
+    "total_incorrect_tokens": 123,
+    "pct_tool_backed": 0.9186991869918699,
+    "pct_derived": 0.08130081300813008,
+    "pct_unsupported": 0.0,
+    "published_incorrect_rate_mean": 0.30777501836245136,
+    "published_incorrect_rate_pooled": 0.2942583732057416,
+    "corrected_genuine_rate_mean": 0.0,
+    "corrected_genuine_rate_pooled": 0.0,
+    "rows": [
+      {
+        "fixture": "ACME",
+        "total_findings": 37,
+        "incorrect": 9,
+        "tool_backed": 9,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "ADRC",
+        "total_findings": 38,
+        "incorrect": 15,
+        "tool_backed": 12,
+        "derived": 3,
+        "unsupported": 0
+      },
+      {
+        "fixture": "AMBG",
+        "total_findings": 41,
+        "incorrect": 10,
+        "tool_backed": 10,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "BANK",
+        "total_findings": 39,
+        "incorrect": 6,
+        "tool_backed": 6,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "CONG",
+        "total_findings": 37,
+        "incorrect": 7,
+        "tool_backed": 6,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "HYPR",
+        "total_findings": 34,
+        "incorrect": 8,
+        "tool_backed": 8,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "LOSS",
+        "total_findings": 18,
+        "incorrect": 9,
+        "tool_backed": 9,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MEGA",
+        "total_findings": 34,
+        "incorrect": 16,
+        "tool_backed": 16,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MERG",
+        "total_findings": 32,
+        "incorrect": 6,
+        "tool_backed": 4,
+        "derived": 2,
+        "unsupported": 0
+      },
+      {
+        "fixture": "NOTX",
+        "total_findings": 40,
+        "incorrect": 10,
+        "tool_backed": 10,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "PRIV",
+        "total_findings": 28,
+        "incorrect": 14,
+        "tool_backed": 11,
+        "derived": 3,
+        "unsupported": 0
+      },
+      {
+        "fixture": "THIN",
+        "total_findings": 40,
+        "incorrect": 13,
+        "tool_backed": 12,
+        "derived": 1,
+        "unsupported": 0
+      }
+    ]
+  },
+  "gemini-3-flash-preview (run-2x3)": {
+    "label": "gemini-3-flash-preview (run-2x3)",
+    "n_cells": 12,
+    "total_incorrect_tokens": 62,
+    "pct_tool_backed": 1.0,
+    "pct_derived": 0.0,
+    "pct_unsupported": 0.0,
+    "published_incorrect_rate_mean": 0.26722883597883595,
+    "published_incorrect_rate_pooled": 0.26382978723404255,
+    "corrected_genuine_rate_mean": 0.0,
+    "corrected_genuine_rate_pooled": 0.0,
+    "rows": [
+      {
+        "fixture": "ACME",
+        "total_findings": 21,
+        "incorrect": 5,
+        "tool_backed": 5,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "ADRC",
+        "total_findings": 16,
+        "incorrect": 0,
+        "tool_backed": 0,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "AMBG",
+        "total_findings": 25,
+        "incorrect": 5,
+        "tool_backed": 5,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "BANK",
+        "total_findings": 20,
+        "incorrect": 7,
+        "tool_backed": 7,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "CONG",
+        "total_findings": 20,
+        "incorrect": 4,
+        "tool_backed": 4,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "HYPR",
+        "total_findings": 20,
+        "incorrect": 3,
+        "tool_backed": 3,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "LOSS",
+        "total_findings": 18,
+        "incorrect": 7,
+        "tool_backed": 7,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MEGA",
+        "total_findings": 18,
+        "incorrect": 12,
+        "tool_backed": 12,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MERG",
+        "total_findings": 20,
+        "incorrect": 2,
+        "tool_backed": 2,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "NOTX",
+        "total_findings": 20,
+        "incorrect": 6,
+        "tool_backed": 6,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "PRIV",
+        "total_findings": 16,
+        "incorrect": 6,
+        "tool_backed": 6,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "THIN",
+        "total_findings": 21,
+        "incorrect": 5,
+        "tool_backed": 5,
+        "derived": 0,
+        "unsupported": 0
+      }
+    ]
+  },
+  "glm-5.1_cloud (run-2x3)": {
+    "label": "glm-5.1_cloud (run-2x3)",
+    "n_cells": 12,
+    "total_incorrect_tokens": 103,
+    "pct_tool_backed": 0.9029126213592233,
+    "pct_derived": 0.0970873786407767,
+    "pct_unsupported": 0.0,
+    "published_incorrect_rate_mean": 0.391056086314707,
+    "published_incorrect_rate_pooled": 0.38721804511278196,
+    "corrected_genuine_rate_mean": 0.0,
+    "corrected_genuine_rate_pooled": 0.0,
+    "rows": [
+      {
+        "fixture": "ACME",
+        "total_findings": 20,
+        "incorrect": 5,
+        "tool_backed": 5,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "ADRC",
+        "total_findings": 30,
+        "incorrect": 9,
+        "tool_backed": 8,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "AMBG",
+        "total_findings": 18,
+        "incorrect": 4,
+        "tool_backed": 4,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "BANK",
+        "total_findings": 22,
+        "incorrect": 6,
+        "tool_backed": 6,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "CONG",
+        "total_findings": 20,
+        "incorrect": 12,
+        "tool_backed": 11,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "HYPR",
+        "total_findings": 29,
+        "incorrect": 8,
+        "tool_backed": 8,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "LOSS",
+        "total_findings": 21,
+        "incorrect": 14,
+        "tool_backed": 13,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MEGA",
+        "total_findings": 22,
+        "incorrect": 18,
+        "tool_backed": 17,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MERG",
+        "total_findings": 21,
+        "incorrect": 6,
+        "tool_backed": 4,
+        "derived": 2,
+        "unsupported": 0
+      },
+      {
+        "fixture": "NOTX",
+        "total_findings": 20,
+        "incorrect": 6,
+        "tool_backed": 6,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "PRIV",
+        "total_findings": 21,
+        "incorrect": 9,
+        "tool_backed": 6,
+        "derived": 3,
+        "unsupported": 0
+      },
+      {
+        "fixture": "THIN",
+        "total_findings": 22,
+        "incorrect": 6,
+        "tool_backed": 5,
+        "derived": 1,
+        "unsupported": 0
+      }
+    ]
+  },
+  "kimi-k2.6 (run-2x3)": {
+    "label": "kimi-k2.6 (run-2x3)",
+    "n_cells": 12,
+    "total_incorrect_tokens": 78,
+    "pct_tool_backed": 0.9230769230769231,
+    "pct_derived": 0.07692307692307693,
+    "pct_unsupported": 0.0,
+    "published_incorrect_rate_mean": 0.2473610067133618,
+    "published_incorrect_rate_pooled": 0.23636363636363636,
+    "corrected_genuine_rate_mean": 0.0,
+    "corrected_genuine_rate_pooled": 0.0,
+    "rows": [
+      {
+        "fixture": "ACME",
+        "total_findings": 27,
+        "incorrect": 8,
+        "tool_backed": 8,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "ADRC",
+        "total_findings": 28,
+        "incorrect": 0,
+        "tool_backed": 0,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "AMBG",
+        "total_findings": 30,
+        "incorrect": 7,
+        "tool_backed": 7,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "BANK",
+        "total_findings": 26,
+        "incorrect": 10,
+        "tool_backed": 9,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "CONG",
+        "total_findings": 32,
+        "incorrect": 5,
+        "tool_backed": 5,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "HYPR",
+        "total_findings": 32,
+        "incorrect": 8,
+        "tool_backed": 8,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "LOSS",
+        "total_findings": 23,
+        "incorrect": 14,
+        "tool_backed": 13,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MEGA",
+        "total_findings": 29,
+        "incorrect": 0,
+        "tool_backed": 0,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MERG",
+        "total_findings": 33,
+        "incorrect": 10,
+        "tool_backed": 9,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "NOTX",
+        "total_findings": 28,
+        "incorrect": 0,
+        "tool_backed": 0,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "PRIV",
+        "total_findings": 24,
+        "incorrect": 11,
+        "tool_backed": 9,
+        "derived": 2,
+        "unsupported": 0
+      },
+      {
+        "fixture": "THIN",
+        "total_findings": 18,
+        "incorrect": 5,
+        "tool_backed": 4,
+        "derived": 1,
+        "unsupported": 0
+      }
+    ]
+  },
+  "minimax-m3 (run-2x3)": {
+    "label": "minimax-m3 (run-2x3)",
+    "n_cells": 12,
+    "total_incorrect_tokens": 93,
+    "pct_tool_backed": 0.8817204301075269,
+    "pct_derived": 0.10752688172043011,
+    "pct_unsupported": 0.010752688172043012,
+    "published_incorrect_rate_mean": 0.27123779151327876,
+    "published_incorrect_rate_pooled": 0.26571428571428574,
+    "corrected_genuine_rate_mean": 0.0036231884057971015,
+    "corrected_genuine_rate_pooled": 0.002857142857142857,
+    "rows": [
+      {
+        "fixture": "ACME",
+        "total_findings": 25,
+        "incorrect": 5,
+        "tool_backed": 5,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "ADRC",
+        "total_findings": 30,
+        "incorrect": 0,
+        "tool_backed": 0,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "AMBG",
+        "total_findings": 29,
+        "incorrect": 6,
+        "tool_backed": 6,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "BANK",
+        "total_findings": 25,
+        "incorrect": 8,
+        "tool_backed": 8,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "CONG",
+        "total_findings": 28,
+        "incorrect": 8,
+        "tool_backed": 7,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "HYPR",
+        "total_findings": 32,
+        "incorrect": 6,
+        "tool_backed": 6,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "LOSS",
+        "total_findings": 23,
+        "incorrect": 14,
+        "tool_backed": 12,
+        "derived": 1,
+        "unsupported": 1
+      },
+      {
+        "fixture": "MEGA",
+        "total_findings": 34,
+        "incorrect": 17,
+        "tool_backed": 16,
+        "derived": 1,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MERG",
+        "total_findings": 36,
+        "incorrect": 7,
+        "tool_backed": 5,
+        "derived": 2,
+        "unsupported": 0
+      },
+      {
+        "fixture": "NOTX",
+        "total_findings": 32,
+        "incorrect": 6,
+        "tool_backed": 6,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "PRIV",
+        "total_findings": 30,
+        "incorrect": 10,
+        "tool_backed": 6,
+        "derived": 4,
+        "unsupported": 0
+      },
+      {
+        "fixture": "THIN",
+        "total_findings": 26,
+        "incorrect": 6,
+        "tool_backed": 5,
+        "derived": 1,
+        "unsupported": 0
+      }
+    ]
+  },
+  "qwen3.5_397b (run-2x3)": {
+    "label": "qwen3.5_397b (run-2x3)",
+    "n_cells": 12,
+    "total_incorrect_tokens": 58,
+    "pct_tool_backed": 1.0,
+    "pct_derived": 0.0,
+    "pct_unsupported": 0.0,
+    "published_incorrect_rate_mean": 0.24389077662103978,
+    "published_incorrect_rate_pooled": 0.23770491803278687,
+    "corrected_genuine_rate_mean": 0.0,
+    "corrected_genuine_rate_pooled": 0.0,
+    "rows": [
+      {
+        "fixture": "ACME",
+        "total_findings": 19,
+        "incorrect": 2,
+        "tool_backed": 2,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "ADRC",
+        "total_findings": 20,
+        "incorrect": 4,
+        "tool_backed": 4,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "AMBG",
+        "total_findings": 26,
+        "incorrect": 5,
+        "tool_backed": 5,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "BANK",
+        "total_findings": 20,
+        "incorrect": 6,
+        "tool_backed": 6,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "CONG",
+        "total_findings": 24,
+        "incorrect": 5,
+        "tool_backed": 5,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "HYPR",
+        "total_findings": 20,
+        "incorrect": 3,
+        "tool_backed": 3,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "LOSS",
+        "total_findings": 16,
+        "incorrect": 7,
+        "tool_backed": 7,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MEGA",
+        "total_findings": 20,
+        "incorrect": 12,
+        "tool_backed": 12,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "MERG",
+        "total_findings": 20,
+        "incorrect": 3,
+        "tool_backed": 3,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "NOTX",
+        "total_findings": 26,
+        "incorrect": 5,
+        "tool_backed": 5,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "PRIV",
+        "total_findings": 14,
+        "incorrect": 4,
+        "tool_backed": 4,
+        "derived": 0,
+        "unsupported": 0
+      },
+      {
+        "fixture": "THIN",
+        "total_findings": 19,
+        "incorrect": 2,
+        "tool_backed": 2,
+        "derived": 0,
+        "unsupported": 0
+      }
+    ]
+  }
+}
